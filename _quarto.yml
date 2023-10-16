@@ -11,13 +11,24 @@ website:
       - about.qmd
       - href: resources.qmd
         text: Resources
+      - href: cv/Heather Childers CV.pdf
+        text: CV
+        
+    right: 
+      - href: https://github.com/hmchilders
+        icon: github
+  page-footer: 
+    background: light
+    left: "Heather Childers"
+    right: 
+      - icon: github
+        href: https://github.com/hmchilders
 
 format:
   html:
     theme: 
-      light: Journal
-      dark: Solar
-    css: styles.css
+      - styles.scss
+    mainfont: Playfair Display
     toc: true
     page-layout: full
 

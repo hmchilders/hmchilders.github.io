@@ -1,1 +1,21 @@
 /* css styles */
+h1 {
+  text-align: center;
+  background-color: gold;
+  border-radius: 25px;
+  
+}
+
+a {
+  color: teal;
+  font-style: italic;
+}
+
+.blue-text{
+  color: blue;
+}
+
+.important-text{
+  color: red;
+  font-size: 30px;
+}
