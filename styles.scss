@@ -1,0 +1,36 @@
+/*-- scss:defaults --*/
+//Colors
+$light_cool: #DEF4DF;
+$light_warm: #E8C6C2;
+$medium_color: #A77B99;
+$dark_cool: #02535F;
+$dark_warm:  #490C18;
+
+//Import fonts
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Playfair+Display:wght@400;700&display=swap');
+
+//base Document bg
+$navbar-bg: $light_warm;
+$navbar-fg:$dark_warm;
+$body_bg: $light_cool;
+$footer-bg: $light_warm;
+$link-color:$dark_cool;
+
+/*-- scss:rules --*/
+h1 {
+  letter-spacing: 5px;
+  color: $dark_warm;
+}
+
+h3,h2 {
+  letter-spacing: 2px;
+  color: $dark_cool;
+}
+
+.title{
+  color: $medium_color;
+}
+
+.center-text {
+  text-align: center;
+}
