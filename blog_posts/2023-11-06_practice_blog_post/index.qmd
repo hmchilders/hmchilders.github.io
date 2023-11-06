@@ -1,0 +1,16 @@
+---
+title: "My First Blog Post" 
+description: "This is for a short description of the post"
+author: 
+  - name: Heather Childers
+    url: hmchilders.github.io/
+    affiliation: Master of Environmental Data Science Program
+    affiliation-url: https://ucsb-meds.github.io/
+    #orcid: 
+date: 11-06-2023
+categories: [R, Quarto, MEDS]
+citation: 
+  url: hmchilders.github.io/blogs/2023-11-06_practice_blog_post
+---
+
+## Title Info

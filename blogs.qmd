@@ -1,5 +1,10 @@
 ---
 title: "Blog Posts"
+listing: 
+  contents: blog_posts
+  type: grid
+  sort: "date desc"
+  categories: true
 ---
 
-### **Here is where I will include blog posts from my Master in Environmental Data Science Program**
+### **Here is where I will include blog posts from my Master of Environmental Data Science Program**

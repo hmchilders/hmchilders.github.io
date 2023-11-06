@@ -11,7 +11,7 @@ about:
     - text: Github
       href: https://github.com/hmchilders
       icon: github
-    - text: Email
+    - text: Email Me!
       href: mailto::hmchilders@ucsb.edu
 ---
 
