@@ -13,8 +13,8 @@ website:
         text: Blog Posts
       - href: resources.qmd
         text: Resources
-      - href: cv/Heather Childers CV.pdf
-        text: CV
+      - href: cv/Resume.pdf
+        text: Resume
         
     right: 
       - href: https://github.com/hmchilders
