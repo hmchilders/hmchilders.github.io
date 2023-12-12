@@ -1,10 +1,11 @@
 /*-- scss:defaults --*/
 //Colors
-$light_cool: #D7F9FF;
-$light_warm: #668F80;
-$medium_color: #F9FBF2;
-$dark_cool: #AFCBFF;
+$light_cool: #F9F5E3;
+$light_warm: #7D8570;
+$medium_color: #B49A67;
+$dark_cool: #AD6A6C;
 $dark_warm:  #0E1C36;
+$header_col: #BA9CC8;
 
 //Import fonts
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Playfair+Display:wght@400;700&display=swap');
@@ -22,9 +23,14 @@ h1 {
   color: $dark_warm;
 }
 
-h3,h2 {
+h2 {
   letter-spacing: 2px;
   color: $light_warm;
+}
+
+h3 {
+  letter-spacing: 2px;
+  color: $header_col;
 }
 
 .title{
