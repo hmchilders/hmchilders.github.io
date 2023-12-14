@@ -72,14 +72,13 @@ As researchers have continued to find ways to solve this dilemma, there are two 
 
 ### The Welfare, Poverty, and Inequality Index
 
-Kraay et al., a Development Economic Group at the World Bank, have found a way to create an index that is distribution sensitive while also having intuitive units. This index is calculated by averaging the ratio between a fixed income threshold and an individual's income. This is slightly different from the other indices discussed in this paper because the threshold income is in the numerator of the income ratio, and the threshold income doesn't have to be the poverty line. The threshold income can take on a variety of values including a simple linear equation. The Welfare, Poverty, and Inequality Index describes the "the average factor by which individual incomes need to be multiplied to reach the
-reference level of income" (Kraay et at., 2023). This is a great alternative for economists, social scientists, and policy makers who hope to provide a similar index to what is being common used in literature, but wish to improve the transparency of the inequality within a population.
+Kraay et al., a Development Economic Group at the World Bank, have found a way to create an index that is distribution sensitive while also having intuitive units. This index is calculated by averaging the ratio between a fixed income threshold and an individual's income. This is slightly different from the other indices discussed in this paper because the threshold income is in the numerator of the income ratio, and the threshold income doesn't have to be the poverty line. The threshold income can take on a variety of values including a simple linear equation. The Welfare, Poverty, and Inequality Index describes the "the average factor by which individual incomes need to be multiplied to reach the reference level of income" (Kraay et at., 2023). This is a great alternative for economists, social scientists, and policy makers who hope to provide a similar index to what is being common used in literature, but wish to improve the transparency of the inequality within a population.
 
 ### The Multi-dimensional Poverty Index
 
 The United Nations Development Programme along with the Oxford Poverty and Human Development Initiative have developed a multidimensional poverty index that allows for factors other than just poverty to be included in the measurement of inequality. The multi-dimensional poverty index looks at three main factors when determining poverty: Access to healthcare, access to education, and the standard of living for each population of interest. These key factors are then broken up into subcategories that can be scored based on a percentage. These percentages are then weighted and summed to output a poverty index.
 
-![Source: OPHI (2018). Global Multidimensional Poverty Index 2018: The Most Detailed Picture to Date of the World\'s Poorest People. Report. Oxford Poverty and Human Development Initiative, University of Oxford.](MPI.png)
+![Source: OPHI (2018). Global Multidimensional Poverty Index 2018: The Most Detailed Picture to Date of the World's Poorest People. Report. Oxford Poverty and Human Development Initiative, University of Oxford.](MPI.png)
 
 ## Conclusion
 

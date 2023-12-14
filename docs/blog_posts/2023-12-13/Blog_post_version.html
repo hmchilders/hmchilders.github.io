@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.450">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Heather Childers - Impact of the Thomas Fire on Santa Barbara County Air Quality and Land Cover Change</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" integrity="sha512-c3Nl8+7g4LMSTdrm621y7kf9v3SDPnhxLNhcjFJbKECVnmZHTdo+IRO05sNLTH/D3vA6u1X32ehoLC7WFVdheg==" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
+
+
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">Heather Childers</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html" rel="" target="">
+ <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../about.html" rel="" target="">
+ <span class="menu-text">About Me</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../blogs.html" rel="" target="">
+ <span class="menu-text">Blog Posts</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../resources.html" rel="" target="">
+ <span class="menu-text">Resources</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../cv/Resume.pdf" rel="" target="">
+ <span class="menu-text">Resume</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/hmchilders" rel="" target=""><i class="bi bi-github" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+</ul>
+            <div class="quarto-navbar-tools">
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-page-left">
+      <h1 class="title">Impact of the Thomas Fire on Santa Barbara County Air Quality and Land Cover Change</h1>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#about-this-notebook" id="toc-about-this-notebook" class="nav-link active" data-scroll-target="#about-this-notebook">About this Notebook:</a></li>
+  <li><a href="#about-the-data" id="toc-about-the-data" class="nav-link" data-scroll-target="#about-the-data">About the data:</a></li>
+  <li><a href="#import-libraries" id="toc-import-libraries" class="nav-link" data-scroll-target="#import-libraries">Import Libraries</a></li>
+  <li><a href="#plot-1-daily-and-5-day-rolling-average-aqi-for-2017-2018" id="toc-plot-1-daily-and-5-day-rolling-average-aqi-for-2017-2018" class="nav-link" data-scroll-target="#plot-1-daily-and-5-day-rolling-average-aqi-for-2017-2018">Plot 1: Daily and 5-day Rolling Average AQI for 2017-2018</a>
+  <ul class="collapse">
+  <li><a href="#prepare-and-explore-the-aqi-data" id="toc-prepare-and-explore-the-aqi-data" class="nav-link" data-scroll-target="#prepare-and-explore-the-aqi-data">Prepare and Explore the AQI Data</a></li>
+  <li><a href="#select-only-the-sb-county-data-and-the-relevant-columns" id="toc-select-only-the-sb-county-data-and-the-relevant-columns" class="nav-link" data-scroll-target="#select-only-the-sb-county-data-and-the-relevant-columns">Select only the SB County data and the relevant columns</a></li>
+  <li><a href="#wrangle-the-data-before-plotting" id="toc-wrangle-the-data-before-plotting" class="nav-link" data-scroll-target="#wrangle-the-data-before-plotting">Wrangle the Data before Plotting</a></li>
+  <li><a href="#plot-the-aqi-data" id="toc-plot-the-aqi-data" class="nav-link" data-scroll-target="#plot-the-aqi-data">Plot the AQI Data</a></li>
+  </ul></li>
+  <li><a href="#plot-2-plot-the-thomas-fire-burn-scar-as-a-false-color-image" id="toc-plot-2-plot-the-thomas-fire-burn-scar-as-a-false-color-image" class="nav-link" data-scroll-target="#plot-2-plot-the-thomas-fire-burn-scar-as-a-false-color-image">Plot 2: Plot the Thomas Fire Burn Scar as a False Color Image</a>
+  <ul class="collapse">
+  <li><a href="#import-land-cover-data" id="toc-import-land-cover-data" class="nav-link" data-scroll-target="#import-land-cover-data">Import Land Cover Data</a></li>
+  <li><a href="#clean-and-wrangle-the-calfire-data" id="toc-clean-and-wrangle-the-calfire-data" class="nav-link" data-scroll-target="#clean-and-wrangle-the-calfire-data">Clean and Wrangle the CALFIRE Data</a></li>
+  <li><a href="#create-the-thomas-fire-burn-scar" id="toc-create-the-thomas-fire-burn-scar" class="nav-link" data-scroll-target="#create-the-thomas-fire-burn-scar">Create the Thomas Fire Burn Scar</a></li>
+  <li><a href="#clean-and-wrangle-the-landsat-data" id="toc-clean-and-wrangle-the-landsat-data" class="nav-link" data-scroll-target="#clean-and-wrangle-the-landsat-data">Clean and Wrangle the Landsat Data</a></li>
+  <li><a href="#create-the-false-color-image" id="toc-create-the-false-color-image" class="nav-link" data-scroll-target="#create-the-false-color-image">Create the False Color Image</a></li>
+  <li><a href="#plot-the-land-cover-data" id="toc-plot-the-land-cover-data" class="nav-link" data-scroll-target="#plot-the-land-cover-data">Plot the Land Cover Data</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content quarto-banner-title-block column-page-left" id="quarto-document-content">
+
+
+
+
+<p>Author: Heather Childers</p>
+<p><em>For more information and a complete workflow with extra checks, consider checking out my github repositiory!</em> <strong>Github Repo:</strong> https://github.com/hmchilders/ThomasFire_AQI</p>
+<section id="about-this-notebook" class="level2">
+<h2 class="anchored" data-anchor-id="about-this-notebook">About this Notebook:</h2>
+<p>The purpose of this exercise is to explore the impact of the 2017 Thomas fire on Santa Barbara County air quality and land cover. We’ll analyze the impact on air quality by plotting the daily and 5-day rolling average values of the air quality index for 2017 and 2018 to compare the AQI during the Thomas fire to the usual AQI for the area. We’ll explore the land cover change by using a false color image of Santa Barbara County and comparing it with the fire scar from the Thomas Fire.</p>
+<p>Some highlights of this analysis include: - Fetching data from an online repository - Data wrangling - Time Series analysis - Creating line plots with a legend - Creating a false color image - Visulaizing raster data</p>
+</section>
+<section id="about-the-data" class="level2">
+<h2 class="anchored" data-anchor-id="about-the-data">About the data:</h2>
+<p>We’ll be using the following Datasets for this analysis:</p>
+<ol type="1">
+<li><p>Air Quality Index (AQI) data from the US Environmental Protection Agency to visualize the impact on the AQI of the 2017 Thomas Fire in Santa Barbara County. The data can be accesses here: “AirData Website File Download Page.” EPA, Environmental Protection Agency, aqs.epa.gov/aqsweb/airdata/download_files.html#AQI. Accessed 28 Nov.&nbsp;2023.</p></li>
+<li><p>A simplified collection of bands (red, green, blue, near-infrared and shortwave infrared) from the Landsat Collection 2 Level-2 atmosperically corrected surface reflectance data, collected by the Landsat 8 satellite. The data can be accessed in the data folder of this repository. More info can be found here: “Microsoft Planetary Computer.” Planetary Computer, planetarycomputer.microsoft.com/dataset/landsat-c2-l2. Accessed 28 Nov.&nbsp;2023.</p></li>
+<li><p>A shapefile of fire perimeters in California during 2017 The data can be accessed here: “California Fire Perimeters (All).” California State Geoportal, California Department of Forestry and Fire Protection, gis.data.ca.gov/datasets/CALFIRE-Forestry::california-fire-perimeters-all-1/about. Accessed 28 Nov.&nbsp;2023.</p></li>
+</ol>
+<p>These are the plots we’ll be trying to make: A timeseries analysis showing the daily average AQI and the 5-day rolling average from 2017 to 2018.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Blog_post_version_files/figure-html/f6fe1edd-7717-40ce-b5db-00d6b0c74901-1-AQIplot.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">AQIplot.png</figcaption>
+</figure>
+</div>
+<p>A false color image showing the fire scar from the Thomas fire in Santa Barbara County</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="Blog_post_version_files/figure-html/f6fe1edd-7717-40ce-b5db-00d6b0c74901-2-FireScar-2.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">FireScar-2.png</figcaption>
+</figure>
+</div>
+</section>
+<section id="import-libraries" class="level2">
+<h2 class="anchored" data-anchor-id="import-libraries">Import Libraries</h2>
+<p>For this exercise, we’ll be using a variety of python packages. Please install these packages as needed before you import them.</p>
+<div class="cell" data-tags="[]" data-execution_count="10">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Import the libraries and functions needed for this notebook</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> os</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.patches <span class="im">as</span> mpatches</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> xarray <span class="im">as</span> xr</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> rioxarray <span class="im">as</span> rioxr</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> geopandas <span class="im">as</span> gpd</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> shapely <span class="im">import</span> Point</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> shapely.geometry <span class="im">import</span> box</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> rasterio.features <span class="im">import</span> rasterize </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="plot-1-daily-and-5-day-rolling-average-aqi-for-2017-2018" class="level1">
+<h1>Plot 1: Daily and 5-day Rolling Average AQI for 2017-2018</h1>
+<p>This section has a step by step walkthrough of the steps needed to create the first plot in this analysis ### Import Data Load in the 2 AQI datasets will be used for the first plot showing AQI over time:</p>
+<div class="cell" data-tags="[]" data-execution_count="11">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># read in the 2017 AQI data</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>aqi_17 <span class="op">=</span> pd.read_csv(<span class="st">'https://aqs.epa.gov/aqsweb/airdata/daily_aqi_by_county_2017.zip'</span>)</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co"># read in the 2018 AQI data</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>aqi_18 <span class="op">=</span> pd.read_csv(<span class="st">'https://aqs.epa.gov/aqsweb/airdata/daily_aqi_by_county_2018.zip'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<section id="prepare-and-explore-the-aqi-data" class="level3">
+<h3 class="anchored" data-anchor-id="prepare-and-explore-the-aqi-data">Prepare and Explore the AQI Data</h3>
+<p>To prepare the AQI Data, we will preform the following steps: 1. Create one dataset to work with by concatenating the data 2. Clean the Data so that it is easier to wrangle</p>
+<p>When you’re done preparing the data, use the <code>.head()</code> function to check that our data preparations are successful. This is also useful for knowing how we will subset the data in the next step.</p>
+<div class="cell" data-tags="[]" data-execution_count="24">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Concatenate 2 dataframes</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>aqi <span class="op">=</span> pd.concat([aqi_17,aqi_18])</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="co">#-----Clean the Data-----</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="co"># re-assign the column names - .str.lower() makes them lower case</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>aqi.columns <span class="op">=</span> aqi.columns.<span class="bu">str</span>.lower()</span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="co">#  re-assign the column names again - .str.replace(' ','_') replaces the space for _</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>aqi.columns <span class="op">=</span> aqi.columns.<span class="bu">str</span>.replace(<span class="st">' '</span>,<span class="st">'_'</span>)</span>
+<span id="cb3-10"><a href="#cb3-10" aria-hidden="true" tabindex="-1"></a><span class="co">#Use .head()to see the head of the dataframe </span></span>
+<span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>aqi.head(n<span class="op">=</span><span class="dv">3</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="24">
+<div>
+
+
+<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">state_name</th>
+<th data-quarto-table-cell-role="th">county_name</th>
+<th data-quarto-table-cell-role="th">state_code</th>
+<th data-quarto-table-cell-role="th">county_code</th>
+<th data-quarto-table-cell-role="th">date</th>
+<th data-quarto-table-cell-role="th">aqi</th>
+<th data-quarto-table-cell-role="th">category</th>
+<th data-quarto-table-cell-role="th">defining_parameter</th>
+<th data-quarto-table-cell-role="th">defining_site</th>
+<th data-quarto-table-cell-role="th">number_of_sites_reporting</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">0</td>
+<td>Alabama</td>
+<td>Baldwin</td>
+<td>1</td>
+<td>3</td>
+<td>2017-01-01</td>
+<td>21</td>
+<td>Good</td>
+<td>PM2.5</td>
+<td>01-003-0010</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">1</td>
+<td>Alabama</td>
+<td>Baldwin</td>
+<td>1</td>
+<td>3</td>
+<td>2017-01-04</td>
+<td>22</td>
+<td>Good</td>
+<td>PM2.5</td>
+<td>01-003-0010</td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">2</td>
+<td>Alabama</td>
+<td>Baldwin</td>
+<td>1</td>
+<td>3</td>
+<td>2017-01-10</td>
+<td>19</td>
+<td>Good</td>
+<td>PM2.5</td>
+<td>01-003-0010</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
+</section>
+<section id="select-only-the-sb-county-data-and-the-relevant-columns" class="level3">
+<h3 class="anchored" data-anchor-id="select-only-the-sb-county-data-and-the-relevant-columns">Select only the SB County data and the relevant columns</h3>
+<p>The AQI dataframe has a lot of data that won’t be necessary for our analysis. The first step of this process is to filter the columns to only keep the observations from Santa Barbara County. The second step is to slect only the necessary columns from the dataframe. Shown below is the subsetting performed in one line:</p>
+<div class="cell" data-tags="[]" data-execution_count="13">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Use df.loc to filter to the Santa Barbara rows and columns</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>aqi_sb <span class="op">=</span> aqi.loc[aqi.county_name <span class="op">==</span> <span class="st">'Santa Barbara'</span>,</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>                 [<span class="st">'date'</span>, <span class="st">'aqi'</span>, <span class="st">'category'</span>,<span class="st">'defining_parameter'</span>, <span class="st">'defining_site'</span>, <span class="st">'number_of_sites_reporting'</span>]]</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="wrangle-the-data-before-plotting" class="level3">
+<h3 class="anchored" data-anchor-id="wrangle-the-data-before-plotting">Wrangle the Data before Plotting</h3>
+<p>In this analysis, we are looking to plot both the daily averages for the AQI as well as the five day rolling averages. Before we plot the data it is important that we first perform the necessary data wrangling to: 1. Set the date to a datetime object 2. Set the date as the index 3. Calculate the 5 day rolling average</p>
+<div class="cell" data-tags="[]" data-execution_count="14">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Overwrite the current date columns and set the dates to a datetime object</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>aqi_sb.date <span class="op">=</span> pd.to_datetime(aqi_sb.date)</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Use set_index to reset the index </span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>aqi_sb <span class="op">=</span> aqi_sb.set_index(<span class="st">'date'</span>)</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="co"># access the index</span></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>aqi_index <span class="op">=</span> aqi_sb.index</span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a><span class="co"># add the 5 Day Average column</span></span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>aqi_sb.aqi.rolling(<span class="st">'5D'</span>).mean()</span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>aqi_sb <span class="op">=</span> aqi_sb.assign(Five_day_average <span class="op">=</span> aqi_sb.aqi.rolling(<span class="st">'5D'</span>).mean())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="plot-the-aqi-data" class="level2">
+<h2 class="anchored" data-anchor-id="plot-the-aqi-data">Plot the AQI Data</h2>
+<p>Use the dataframe we cleaned and wrangled above to plot the Daily and 5_day average AQI data.</p>
+<p>Due to the way we cleaned and wrangled the data, we are able to use just the <code>.plot()</code> function with some simple customizations to create the desired visualization.</p>
+<div class="cell" data-tags="[]" data-execution_count="15">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># plot the data</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>aqi_sb.plot(use_index <span class="op">=</span> <span class="va">True</span>, </span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>        y<span class="op">=</span> [<span class="st">'aqi'</span>, <span class="st">'Five_day_average'</span>],</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>        title<span class="op">=</span><span class="st">'Santa Barbara County Air Quality Index from 2017-2018'</span>,</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>        xlabel<span class="op">=</span><span class="st">'Year'</span>,</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>        ylabel<span class="op">=</span><span class="st">'Air Quality Index'</span></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>        )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="15">
+<pre><code>&lt;Axes: title={'center': 'Santa Barbara County Air Quality Index from 2017-2018'}, xlabel='Year', ylabel='Air Quality Index'&gt;</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="Blog_post_version_files/figure-html/cell-7-output-2.png" class="img-fluid"></p>
+</div>
+</div>
+</section>
+</section>
+<section id="plot-2-plot-the-thomas-fire-burn-scar-as-a-false-color-image" class="level1">
+<h1>Plot 2: Plot the Thomas Fire Burn Scar as a False Color Image</h1>
+<p>The following steps will walkthough how to create the flase color image using the landsat data and the California fire perimeters data.</p>
+<p>If youre interested, you can read more about false color images here: <a href="https://earthobservatory.nasa.gov/features/FalseColor">NASA Earth Observatory - Why is that Forest Red and that Cloud Blue? How to Interpret a False-Color Satellite Image</a></p>
+<section id="import-land-cover-data" class="level3">
+<h3 class="anchored" data-anchor-id="import-land-cover-data">Import Land Cover Data</h3>
+<p>Let’s begin by importing the two necessary datasets for this analysis:</p>
+<div class="cell" data-execution_count="16">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Import the LandSat8 data</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>landsat <span class="op">=</span> rioxr.open_rasterio(os.path.join(os.getcwd(),<span class="st">'data'</span>,<span class="st">'landsat8-2018-01-26-sb-simplified.nc'</span>))</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Import the CalFire data</span></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>calfire <span class="op">=</span> gpd.read_file(<span class="st">'data/California_Fire_Perimeters_2017/California_Fire_Perimeters_2017.shp'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="clean-and-wrangle-the-calfire-data" class="level3">
+<h3 class="anchored" data-anchor-id="clean-and-wrangle-the-calfire-data">Clean and Wrangle the CALFIRE Data</h3>
+<p>Before we create the visualization, there are a few steps to clean and wrangle the data to make it easier to work with later. The following code chunk runs through the follwoing steps: 1. Make the column names lowercase 2. Filter the Calfire data to only keep the Thomas Fire Data 3. Reproject the calfire data to the same CRS as the landsat data so that they can be layered when plotting</p>
+<div class="cell" data-tags="[]" data-execution_count="17">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># re-assign the column names - .str.lower() makes them lower case</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>calfire.columns <span class="op">=</span> calfire.columns.<span class="bu">str</span>.lower()</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="co">#Select only the thomas fire from the calfire data</span></span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>calfire <span class="op">=</span> calfire[calfire[<span class="st">'fire_name'</span>] <span class="op">==</span> <span class="st">'THOMAS'</span>]</span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Reproject the calfire data to the landsat CRS</span></span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>calfire <span class="op">=</span> calfire.to_crs(landsat.rio.crs)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="create-the-thomas-fire-burn-scar" class="level3">
+<h3 class="anchored" data-anchor-id="create-the-thomas-fire-burn-scar">Create the Thomas Fire Burn Scar</h3>
+<p>Now that we have cleaned and wrangled the data, we can use the <code>.plot()</code> function to plot the burn scar. You can leave the parentheses empty or add some visual customizations as shown below:</p>
+<div class="cell" data-tags="[]" data-execution_count="23">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Plot the CA fire Data</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>calfire.plot(color <span class="op">=</span> <span class="st">'red'</span>, alpha <span class="op">=</span> <span class="fl">0.4</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="23">
+<pre><code>&lt;Axes: &gt;</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="Blog_post_version_files/figure-html/cell-10-output-2.png" class="img-fluid"></p>
+</div>
+</div>
+</section>
+<section id="clean-and-wrangle-the-landsat-data" class="level3">
+<h3 class="anchored" data-anchor-id="clean-and-wrangle-the-landsat-data">Clean and Wrangle the Landsat Data</h3>
+<p>This data was accessed and pre-processed in the Microsoft Planetary Computer to remove data outside land and coarsen the spatial resolution (<a href="https://planetarycomputer.microsoft.com/dataset/landsat-c2-l2">Landsat Collection in MPC</a>). The last step to work with this data is dropping empty bands. This can be done by using the <code>.squeeze()</code> function followed by the <code>.drop()</code> function to remove the empty bands.</p>
+<div class="cell" data-tags="[]" data-execution_count="19">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Use the squeeze method to remove dimensions with length 1</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>landsat <span class="op">=</span> landsat.squeeze()</span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="co">#Remove coordinates associated with that dimension</span></span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>landsat <span class="op">=</span> landsat.drop(<span class="st">'band'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="create-the-false-color-image" class="level3">
+<h3 class="anchored" data-anchor-id="create-the-false-color-image">Create the False Color Image</h3>
+<p>Select the Shortwave Infrared, Near Infrared and red variables (in that order) of the <code>xarray.Dataset</code>, convert it to a <code>numpy.array</code> using the <code>to_array()</code> method, and then use <code>.plot.imshow()</code> to create an false color image with the data. NOTE: Adjust the scale used for plotting the bands by using the robust parameter</p>
+<div class="cell" data-tags="[]" data-execution_count="20">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Select the false color bands: SWIR, NIR, and Red. Then make it an array</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>landsat_false <span class="op">=</span> landsat[ [<span class="st">'swir22'</span>,<span class="st">'nir08'</span>,<span class="st">'red'</span>] ].to_array()</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot the False Color Image</span></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>landsat_false.plot.imshow(robust <span class="op">=</span> <span class="va">True</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="20">
+<pre><code>&lt;matplotlib.image.AxesImage at 0x1968d7110&gt;</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="Blog_post_version_files/figure-html/cell-12-output-2.png" class="img-fluid"></p>
+</div>
+</div>
+</section>
+<section id="plot-the-land-cover-data" class="level2">
+<h2 class="anchored" data-anchor-id="plot-the-land-cover-data">Plot the Land Cover Data</h2>
+<p>Now that we have cleaned and wrangled all of the data, we are ready to make the final plot. It is important to remember that there are 4 main steps in making a more complicated visualizations with matplotlib.pyolot 1. Create the empty figure by defining the figure and axis 2. Add on the layers of data 3. Customize the non-data related features of the graph 4. Show the plot</p>
+<div class="cell" data-tags="[]" data-execution_count="26">
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co">#----------STEP 1: Create Empty Figure---------------</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Create the Figure and Axis</span></span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots()</span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a><span class="co">#---------STEP 2: Add in the data Layers-------------</span></span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a><span class="co">#Plot the Calfire Dataset</span></span>
+<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a>calfire.plot(ax<span class="op">=</span>ax, <span class="co">#set the axis</span></span>
+<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a>             color<span class="op">=</span><span class="st">'red'</span>, <span class="co">#Change the fill color</span></span>
+<span id="cb15-9"><a href="#cb15-9" aria-hidden="true" tabindex="-1"></a>             alpha <span class="op">=</span> <span class="fl">0.1</span>, <span class="co">#Change the transparency of the layer</span></span>
+<span id="cb15-10"><a href="#cb15-10" aria-hidden="true" tabindex="-1"></a>             edgecolor<span class="op">=</span><span class="st">'black'</span>) <span class="co">#Change the edge color</span></span>
+<span id="cb15-11"><a href="#cb15-11" aria-hidden="true" tabindex="-1"></a><span class="co">#Plot the Landsat Data</span></span>
+<span id="cb15-12"><a href="#cb15-12" aria-hidden="true" tabindex="-1"></a>landsat_false.plot.imshow(ax <span class="op">=</span> ax, robust <span class="op">=</span> <span class="va">True</span>)</span>
+<span id="cb15-13"><a href="#cb15-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-14"><a href="#cb15-14" aria-hidden="true" tabindex="-1"></a><span class="co">#---------STEP 3: Customize the figure features-------</span></span>
+<span id="cb15-15"><a href="#cb15-15" aria-hidden="true" tabindex="-1"></a><span class="co">#Add a figure title</span></span>
+<span id="cb15-16"><a href="#cb15-16" aria-hidden="true" tabindex="-1"></a>ax.set_title(<span class="st">'Fire Scar of the Thomas Fire in 2017 set over a Fasle Color Image of Santa Barbara, CA'</span>)</span>
+<span id="cb15-17"><a href="#cb15-17" aria-hidden="true" tabindex="-1"></a><span class="co">#Turn the Axes off</span></span>
+<span id="cb15-18"><a href="#cb15-18" aria-hidden="true" tabindex="-1"></a>ax.axis(<span class="st">'off'</span>)</span>
+<span id="cb15-19"><a href="#cb15-19" aria-hidden="true" tabindex="-1"></a><span class="co">#Add a figure legend</span></span>
+<span id="cb15-20"><a href="#cb15-20" aria-hidden="true" tabindex="-1"></a>fire_scar <span class="op">=</span> mpatches.Patch(color<span class="op">=</span><span class="st">'red'</span>, alpha <span class="op">=</span> <span class="fl">0.6</span>, label<span class="op">=</span><span class="st">'Burned Area'</span>)</span>
+<span id="cb15-21"><a href="#cb15-21" aria-hidden="true" tabindex="-1"></a>ax.legend(handles<span class="op">=</span>[fire_scar])</span>
+<span id="cb15-22"><a href="#cb15-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-23"><a href="#cb15-23" aria-hidden="true" tabindex="-1"></a><span class="co">#--------STEP 4: Show the Plot-------------------------</span></span>
+<span id="cb15-24"><a href="#cb15-24" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="Blog_post_version_files/figure-html/cell-13-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">Heather Childers</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/hmchilders">
+      <i class="bi bi-github" role="img">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+</body></html>
