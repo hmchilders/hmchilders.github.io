@@ -25,6 +25,12 @@ As populations continue to grow, pressure for the agricultural industry to keep 
 
 This analysis aims to see if there is a correlation between the area of cultivated crops and water storage. This analysis will involve nonlinear relationships in linear regression models, multiple linear regressions, evaluation of omitted variables bias, hypothesis testing, and time series decomposition.
 
+For this analysis, my null and alternative hypotheses are as follows:
+
+**H0:** There is no correlation between agricultural land use change and water storage in the Yolo County area.
+
+**HA:** There is a correlation between agricultural land use change and water storage in the Yolo County area.
+
 ## Data
 
 There were four data sources used for this analysis.
@@ -91,11 +97,11 @@ In order to test for ommittted variables bias, I tried to improve my model by ru
 
 ## Results
 
-After running a variety a linear regressions I found that the model with the best fit for my data was a multiple linear regression model with cultivated crop area and annual average precipitation as the variables. Figure 4 shows a summary of the linear regression output.
+After running a variety a linear regressions I found that the model with the best fit for my data was a multiple linear regression model with cultivated crop area and annual average precipitation as the variables. Figure 4 shows a summary of the multiple linear regression output with the best adjusted R-squared value and best p-values for my coefficient estimates.
 
 ![\[Figure 4\] Summary output of the multiple linear regression model of cultivated crop area and annual average precipitation on water storage.](Regression.png)
 
-It is worth noting that the Adjusted R-squared value is 0.4972, which implies that 49% of the variation in my model could be explained by just cultivated crop land use change and annual precipitation.
+It is worth noting that the Adjusted R-squared value is 0.4972, which implies that 49% of the variation in my model could be explained by just cultivated crop land use change and annual precipitation with a penalty for a more complex model.
 
 Based on the results of my summary above, I was not able to reject the null hypothesis at a significance level of 0.5. While I was not able to reject the null hypothesis, these p-values are not so high that they imply there in no relationship between these variables.
 
