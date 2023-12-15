@@ -37,9 +37,9 @@ There were four data sources used for this analysis.
 
 #### National Land Cover Data:
 
-The Multi-Resolution Land Characteristics Consortium has put together a National Land Cover Database for the United States. The land cover database is updated every 2-3 years with a pre-processed land cover raster. The land cover and land cover change data has a resolution of 30m with a 16-class legend. For this analysis I accessed the Continental United States data for all years. The all years dataset includes the years 2003, 2006, 2008, 2011, 2013, 2016, 2019, and 2021. The data download can be found here:
+The Multi-Resolution Land Characteristics Consortium has put together a National Land Cover Database for the United States. The land cover database is updated every 2-3 years with a pre-processed land cover raster. The land cover and land cover change data has a resolution of 30m with a 16-class legend. For this analysis, I accessed the Continental United States data for all years. The all-years dataset includes the years 2003, 2006, 2008, 2011, 2013, 2016, 2019, and 2021. The data download can be found here:
 
-Multi-Resolution Land Characteristics Consortium. (n.d.). *NLCD land cover (CONUS) all years*. NLCD Land Cover (CONUS) All Years . https://www.mrlc.gov/data/nlcd-land-cover-conus-all-years
+Multi-Resolution Land Characteristics Consortium. (n.d.). *NLCD land cover (CONUS) all years*. NLCD Land Cover (CONUS) All Years. https://www.mrlc.gov/data/nlcd-land-cover-conus-all-years
 
 #### NASA - GRACE Satellite Data
 
@@ -65,21 +65,21 @@ My analysis involved three main steps: data exploration and cleaning, data visua
 
 #### Data Exploration and Cleaning
 
-In order to prepare the NLCD data for my experiment, I needed to load in the data, crop it to my area of interest (Yolo County) using the CA county shapefiles, and then create a for loop that runs zonal statistics for each available dataset. This allowed me to create a dataframe that had the change in cultivated crop area from 2003-2021.
+In order to prepare the NLCD data for my experiment, I needed to load in the data, crop it to my area of interest (Yolo County) using the CA county shapefiles, and then create a for loop that runs zonal statistics for each available dataset. This allowed me to create a dataframe that showed the total area of cultivated cropland from 2003-2021.
 
 I was easily able to download the water equivalent thickness anomaly data from the GRACE interactive site, and specify the area of interest before downloading the data. I was able to use `group_by()` and `summarize()` with some other simple manipulations to plot the annual average water equivalent thickness anomaly in centimeters which I simplified to the variable name `mean_water`. After downloading the data, I performed an STL decomposition so I could see any trends in the water storage data.
 
-Similarly, I was easily able to download the monthly precipitation data in 5 year increments from the California Department of Water Resources website. I used to `rbind()` function to combine three datasets into one dataframe that includede data from 2003-2019. From this dataframe I was able to calculate the annual average precipitation in centimeters. I then performed an STL decomposition so I could see any trends in the precipitation data.
+Similarly, I was easily able to download the monthly precipitation data in 5-year increments from the California Department of Water Resources website. I used to `rbind()` function to combine three datasets into one dataframe that included data from 2003-2019. From this dataframe I was able to calculate the annual average precipitation in centimeters. I then performed an STL decomposition so I could see any trends in the precipitation data.
 
 #### Data Visualization
 
 Now that I had a few cleaned and wrangled datasets, I was able to visualize the data before performing linear regressions. The two visualizations I used are shown below in Figures 2 and 3.
 
-![\[Figure 2\] The left figure shows the change in area of cultivated crop lands from 2003-2021 in square meters. The right figure shows the STL decomposition of the annual average water equivalent thickness anomaly(cm) from 2002-2019.](trends.jpeg)
+![\[Figure 2\] The left figure shows the change in the area of cultivated croplands from 2003-2021 in square meters. The right figure shows the STL decomposition of the annual average water equivalent thickness anomaly(cm) from 2002-2019.](trends.jpeg)
 
 The most notable result from this graph is the clear negative correlation between the area of cultivated crops and the trend of water storage in the STL decomposition.
 
-![\[Figure 3\] This figrue shows the comparison of two STL decompositions. Thee left three graphs show the STL decomposition for the Annual Average Precipitation(centimeters) measured byt eh Woodland Weather Station. The right three graphs shows the STL decomposition of the annual average water equivalent thickness anomaly(cm) from 2002-2019.](Decomp.png)
+![\[Figure 3\] This figure shows the comparison of two STL decompositions. The left three graphs show the STL decomposition for the Annual Average Precipitation(centimeters) measured by the Woodland Weather Station. The right three graphs show the STL decomposition of the annual average water equivalent thickness anomaly(cm) from 2002-2019.](Decomp.png)
 
 What I found most interesting about these graphs is that the remainders of these two decompositions seem more similar that the trends.
 
@@ -87,25 +87,23 @@ These two visualizations provided some intuition that the cultivated crop land i
 
 #### Linear Regression Modeling
 
-In order to try to find the best estimates from my linear regression models I performed multiple analyses.
+In order to try to find the best estimates from my linear regression models, I performed multiple analyses.
 
 The first linear regression was a simple linear regression showing the correlation between the water storage and cultivated crop area.
 
-The next set of linear regressions used polynomials for the cultivated crop variable. I ran two experiments looking at a quadratic and cubic equation for cultivated crop land.
+The next set of linear regressions used polynomials for the cultivated crop variable. I ran two experiments looking at a quadratic and cubic equation for cultivated cropland.
 
-In order to test for ommittted variables bias, I tried to improve my model by running two multiple linear regression models that used changes in developed area and annual average precipitation as the additional variables in the multiple linear regression model.
+In order to test for omitted variables bias, I tried to improve my model by running two multiple linear regression models that used changes in developed areas and annual average precipitation as the additional variable in the multiple linear regression model.
 
 ## Results
 
-After running a variety a linear regressions I found that the model with the best fit for my data was a multiple linear regression model with cultivated crop area and annual average precipitation as the variables. Figure 4 shows a summary of the multiple linear regression output with the best adjusted R-squared value and best p-values for my coefficient estimates.
+After running a variety of linear regressions, I found that the model with the best fit for my data was a multiple linear regression model with cultivated crop area and annual average precipitation as the variables. Figure 4 shows a summary of the multiple linear regression output with the best adjusted R-squared value and best p-values for my coefficient estimates.
 
 ![\[Figure 4\] Summary output of the multiple linear regression model of cultivated crop area and annual average precipitation on water storage.](Regression.png)
 
-It is worth noting that the Adjusted R-squared value is 0.4972, which implies that 49% of the variation in my model could be explained by just cultivated crop land use change and annual precipitation with a penalty for a more complex model.
+It is worth noting that the Adjusted R-squared value is 0.4972, which implies that 49% of the variation in my model could be explained by just cultivated cropland use change and annual precipitation with a penalty for a more complex model.
 
-Based on the results of my summary above, I was not able to reject the null hypothesis at a significance level of 0.5. While I was not able to reject the null hypothesis, these p-values are not so high that they imply there in no relationship between these variables.
-
-Since the multiple linear regression model was the best fit for the data, it implies that there was omitted variables bias in my other regressions. This makes sense because the total water storage is likely affected by many factors that were not accounted for in this short analysis.
+Based on the results of my summary above, I was not able to reject the null hypothesis at a significance level of 0.5. While I could not reject the null hypothesis, these p-values are not so high that they imply there is no relationship between these variables. The fact that I was able to increase my adjusted R-squared value by adding in annual precipitation implies that there was omitted variables bias in the simple linear regression. This makes sense because the total water storage is likely affected by many factors that were not accounted for in this short analysis.
 
 ## Future Work
 
