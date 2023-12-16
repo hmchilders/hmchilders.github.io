@@ -20,5 +20,3 @@ about:
 This is a skeleton of my website that will be filled in as I continue my progress throughout the MEDS program.
 
 STAY TUNED!
-
-### **Experience**
