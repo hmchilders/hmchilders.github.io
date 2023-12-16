@@ -218,6 +218,15 @@ tm_shape(census_houston) +
       tm_basemap(server = "OpenStreetMap")
 ```
 
+```{r, messgae = FALSE}
+  tm_shape(trac_without_blackout) +
+  tm_polygons("median_income", 
+          title = "Median Income ($)",
+          palette = "RdPu") +
+    tm_title(text = 'Median Income of Census Tracts that did not Experience a Blackout')+
+      tm_basemap(server = "OpenStreetMap")
+```
+
 ```{r, warning = FALSE}
 ggplot(combined, aes(x=VNP46A1.A2021038.h08v05.001.2021039064328.tif, y=median_income))+
   geom_boxplot()+
