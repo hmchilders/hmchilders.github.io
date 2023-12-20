@@ -1,6 +1,6 @@
 ---
-title: "A Comparison of Common Indices Used to Measure Inequality" 
-description: "Ethics Final Report"
+title: "A Comparison of Common Indices Used to Measure Poverty and Inequality" 
+description: "The goal of this paper is to summarize some of the most commonly used indices for measuring poverty and inequalities for a non-technical audience while providing an accurate account of the benefits and drawbacks of each measurement. A description of some less commonly used indices that provide an alternative approach and opportunities for future work have been included as well."
 author: 
   - name: Heather Childers
     url: hmchilders.github.io/
