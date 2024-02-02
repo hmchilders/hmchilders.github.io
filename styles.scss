@@ -1,11 +1,11 @@
 /*-- scss:defaults --*/
 //Colors
-$light_cool: #F9F5E3;
-$light_warm: #7D8570;
-$medium_color: #B49A67;
-$dark_cool: #AD6A6C;
-$dark_warm:  #0E1C36;
-$header_col: #BA9CC8;
+$light_cool: #DBE4CE;
+$light_warm: #FAFADD;
+$medium_color: #AEC8C5;
+$dark_cool: #5C4742;
+$dark_warm:  #DED3B6;
+$header_col: #2E4756;
 
 //Import fonts
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Playfair+Display:wght@400;700&display=swap');
@@ -13,19 +13,19 @@ $header_col: #BA9CC8;
 //base Document bg
 $navbar-bg: $dark_cool;
 $navbar-fg:$dark_warm;
-$body_bg: $light_cool;
-$footer-bg: $medium_color;
-$link-color:$dark_cool;
+$body_bg: $light_warm;
+$footer-bg: $dark_warm;
+$link-color:$medium_color;
 
 /*-- scss:rules --*/
 h1 {
   letter-spacing: 3px;
-  color: $dark_warm;
+  color: $header_col;
 }
 
 h2 {
   letter-spacing: 2px;
-  color: $light_warm;
+  color: $header_col;
 }
 
 h3 {
@@ -34,7 +34,7 @@ h3 {
 }
 
 .title{
-  color: $dark_warm;
+  color: $header_col;
 }
 
 .center-text {
