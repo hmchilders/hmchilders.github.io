@@ -1,40 +1,39 @@
 /*-- scss:defaults --*/
 //Colors
-$light_cool: #DBE4CE;
-$light_warm: #FAFADD;
-$medium_color: #AEC8C5;
-$dark_cool: #5C4742;
-$dark_warm:  #DED3B6;
-$header_col: #2E4756;
+$green: #D4EDC2;
+$orange: #FFF6C8;
+$purple: #AE6FAA;
+$blue: #CEE1F2;
+$text_color: #131515;
 
 //Import fonts
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Playfair+Display:wght@400;700&display=swap');
 
 //base Document bg
-$navbar-bg: $dark_cool;
-$navbar-fg:$dark_warm;
-$body_bg: $light_warm;
-$footer-bg: $dark_warm;
-$link-color:$medium_color;
+$navbar-bg: $orange;
+$navbar-fg:$text_color;
+$body_bg: $blue;
+$footer-bg: $orange;
+$link-color:$purple;
 
 /*-- scss:rules --*/
 h1 {
   letter-spacing: 3px;
-  color: $header_col;
+  color: $text_color;
 }
 
 h2 {
   letter-spacing: 2px;
-  color: $header_col;
+  color: $text_color;
 }
 
 h3 {
   letter-spacing: 2px;
-  color: $header_col;
+  color: $text_color;
 }
 
 .title{
-  color: $header_col;
+  color: $text_color;
 }
 
 .center-text {

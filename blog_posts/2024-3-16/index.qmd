@@ -56,7 +56,7 @@ All the data and definitions used in this infographic come from the [U.S. Energy
 
 **applying a DEI lens to your design (e.g. considering the people / communities / places represented in your data, consider how you frame your questions / issue)** Using national level data that was collected by a government agency takes the people/communities element out of the project, but it does open up opportunities for bias. However by reporting my sources and letting the data tell me the story, I hope to have mitigated Equity/Integrity issues.
 
-![](DataViz Final Infographic.jpg){fig-alt="This image shows an inforgraphic of 21st century energy transformations and trends. The graphs shows in the infographic are described in the document below, along with the code on how to create each graph. The takeaway message of the infographic is that energy usage has plateaued in the 21st century due to technological advances that have reduced the energy intensity of processes that use energy at the national-sector level."}
+![](DataViz%20Final%20Infographic.jpg){fig-alt="This image shows an inforgraphic of 21st century energy transformations and trends. The graphs shows in the infographic are described in the document below, along with the code on how to create each graph. The takeaway message of the infographic is that energy usage has plateaued in the 21st century due to technological advances that have reduced the energy intensity of processes that use energy at the national-sector level."}
 
 ```{r, echo = FALSE}
 #-------------------------------------------------------------------------------

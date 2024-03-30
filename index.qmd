@@ -4,6 +4,8 @@ image: images/profile.jpg
 toc: false
 about: 
   template: jolla
+  image-width: 25em
+  image-shape: round
   links: 
     - text: LinkedIn
       href: https://www.linkedin.com/in/heather-childers-0b764a232/

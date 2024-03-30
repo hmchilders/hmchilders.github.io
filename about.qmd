@@ -1,5 +1,18 @@
 ---
 title: "About Me"
+image: images/aboutme.jpeg
+toc: false
+about: 
+  template: trestles
+  links: 
+    - text: LinkedIn
+      href: https://www.linkedin.com/in/heather-childers-0b764a232/
+      icon: linkedin
+    - text: Github
+      href: https://github.com/hmchilders
+      icon: github
+    - text: Email Me!
+      href: mailto::hmchilders@ucsb.edu
 ---
 
 ### **A little bit about me...**
