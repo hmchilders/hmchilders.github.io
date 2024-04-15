@@ -1,5 +1,5 @@
 ---
-title: "Blog Posts"
+title: "Relevant Coursework"
 listing: 
   contents: blog_posts
   type: grid
@@ -7,4 +7,12 @@ listing:
   categories: true
 ---
 
-### **Here is where I will include blog posts from my Master of Environmental Data Science Program**
+#### **To get an idea of the kind of projects I've completed in each class**
+
+## Geospatial Analysis
+
+*Insert Grid Style Blog posts here*
+
+## Data Viz
+
+## 
