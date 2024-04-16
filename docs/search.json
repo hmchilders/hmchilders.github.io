@@ -263,7 +263,7 @@
     "href": "index.html",
     "title": "Welcome in!",
     "section": "",
-    "text": "I’m Heather, and I’m thrilled to share snippets of my life with you here. Balancing my education in Engineering and Data Science alongside my extracurricular pursuits and passion projects can be challenging. My hope is that this website will provide a holistic view of who I am and serve as a time capsule of my accomplishments in early adulthood. Take a look around and reach out if any of my projects interest you!"
+    "text": "I’m Heather, and I’m thrilled to share snippets of my life with you here. Showcasing my education in Engineering and Data Science alongside my extracurricular pursuits and passion projects under a single label, or one-page resume, can be challenging. My hope is that this website will provide a holistic view of who I am and serve as a time capsule of my accomplishments in early adulthood. Take a look around and reach out if any of my projects interest you!"
   },
   {
     "objectID": "index.html#hello",
@@ -375,7 +375,7 @@
     "href": "blogs.html#geospatial-analysis",
     "title": "Relevant Coursework",
     "section": "Geospatial Analysis",
-    "text": "Geospatial Analysis\nInsert Grid Style Blog posts here"
+    "text": "Geospatial Analysis\nInsert Grid Style Blog posts here\n\n\nBlog Post 1 Title"
   },
   {
     "objectID": "blogs.html#data-viz",
@@ -383,5 +383,61 @@
     "title": "Relevant Coursework",
     "section": "Data Viz",
     "text": "Data Viz"
+  },
+  {
+    "objectID": "PasProj.html#yoga",
+    "href": "PasProj.html#yoga",
+    "title": "Passion Projects",
+    "section": "Yoga",
+    "text": "Yoga\n[Insert blurb about my yoga journey]"
+  },
+  {
+    "objectID": "PasProj.html#baking",
+    "href": "PasProj.html#baking",
+    "title": "Passion Projects",
+    "section": "Baking",
+    "text": "Baking\n[Insert blurb about baking journey w/ links to some of my favorite recipes & mentioning how I baked goodies for each person in the cohort to promote community]"
+  },
+  {
+    "objectID": "PasProj.html#arts-crafts",
+    "href": "PasProj.html#arts-crafts",
+    "title": "Passion Projects",
+    "section": "Arts & Crafts",
+    "text": "Arts & Crafts\n[Insert blurb about crafting and talk about how we put on craft nights]\nSkills I’ve Learned:\n\nCricut\n3D painting\nCrochet"
+  },
+  {
+    "objectID": "blogs.html#geospatial-analysis-remote-sensing",
+    "href": "blogs.html#geospatial-analysis-remote-sensing",
+    "title": "Relevant Coursework",
+    "section": "Geospatial Analysis & Remote Sensing",
+    "text": "Geospatial Analysis & Remote Sensing\nThe goal of this course was to introduce spatial modeling and analytic techniques of geographic information science to the Master of Environmental Data Science students. This course focused on creating open-source, reproducible workflows for geospatial problem solving in environmental sciences as well as working with different types of remotely sensed data. With an added focus on incorporating environmental justice into our project scope, we routinely worked with U.S. Census tract data to practice considering the human element behind data. Some of the key topics for this course included: -Understanding Geospatial Datatypes: Vector vs Raster Data Manipulation -How we collect remotely sensed data: Active vs Passive Remote Sensing\n\nCheck out my work:\n\n\n\n\n\n\n\n\n\n\nExploring the Socioeconomic Impacts of the 2021 Blackout in Houston, Texas\n\n\nGeospatial Final Project\n\n\n\nHeather Childers\n\n\nDec 10, 2023\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "blogs.html#capstone-projects",
+    "href": "blogs.html#capstone-projects",
+    "title": "Relevant Coursework",
+    "section": "Capstone Projects",
+    "text": "Capstone Projects"
+  },
+  {
+    "objectID": "blogs.html#data-visualization",
+    "href": "blogs.html#data-visualization",
+    "title": "Relevant Coursework",
+    "section": "Data Visualization",
+    "text": "Data Visualization"
+  },
+  {
+    "objectID": "blogs.html#machine-learning",
+    "href": "blogs.html#machine-learning",
+    "title": "Relevant Coursework",
+    "section": "Machine Learning",
+    "text": "Machine Learning"
+  },
+  {
+    "objectID": "blogs.html#python-for-envoronmental-data-science",
+    "href": "blogs.html#python-for-envoronmental-data-science",
+    "title": "Relevant Coursework",
+    "section": "Python for Envoronmental Data Science",
+    "text": "Python for Envoronmental Data Science\n##Environmental Policy Analysis for Data Science"
   }
 ]

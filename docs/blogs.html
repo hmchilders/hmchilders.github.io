@@ -64,20 +64,20 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    const listingTargetEl = window.document.querySelector('#listing-Geospatial .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
     }
 
     const options = {
-      valueNames: ['listing-title','listing-author','listing-date','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-title','listing-author','listing-date','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"],
+      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+    window['quarto-listings']['listing-Geospatial'] = new List('listing-Geospatial', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -160,12 +160,14 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#geospatial-analysis" id="toc-geospatial-analysis" class="nav-link active" data-scroll-target="#geospatial-analysis">Geospatial Analysis</a></li>
-  <li><a href="#data-viz" id="toc-data-viz" class="nav-link" data-scroll-target="#data-viz">Data Viz</a></li>
-  <li><a href="#section" id="toc-section" class="nav-link" data-scroll-target="#section"></a></li>
+  <li><a href="#capstone-projects" id="toc-capstone-projects" class="nav-link active" data-scroll-target="#capstone-projects">Capstone Projects</a></li>
+  <li><a href="#geospatial-analysis-remote-sensing" id="toc-geospatial-analysis-remote-sensing" class="nav-link" data-scroll-target="#geospatial-analysis-remote-sensing">Geospatial Analysis &amp; Remote Sensing</a></li>
+  <li><a href="#data-visualization" id="toc-data-visualization" class="nav-link" data-scroll-target="#data-visualization">Data Visualization</a></li>
+  <li><a href="#machine-learning" id="toc-machine-learning" class="nav-link" data-scroll-target="#machine-learning">Machine Learning</a></li>
+  <li><a href="#python-for-envoronmental-data-science" id="toc-python-for-envoronmental-data-science" class="nav-link" data-scroll-target="#python-for-envoronmental-data-science">Python for Envoronmental Data Science</a></li>
   </ul>
 </nav>
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(6)</span></div><div class="category" data-category="MEDS">MEDS <span class="quarto-category-count">(4)</span></div><div class="category" data-category="R">R <span class="quarto-category-count">(3)</span></div></div></div>
+    </div>
 <!-- main -->
 <main class="content column-page-left" id="quarto-document-content">
 
@@ -189,174 +191,28 @@ ul.task-list li input[type="checkbox"] {
 <section id="to-get-an-idea-of-the-kind-of-projects-ive-completed-in-each-class" class="level4">
 <h4 class="anchored" data-anchor-id="to-get-an-idea-of-the-kind-of-projects-ive-completed-in-each-class"><strong>To get an idea of the kind of projects I’ve completed in each class</strong></h4>
 </section>
-<section id="geospatial-analysis" class="level2">
-<h2 class="anchored" data-anchor-id="geospatial-analysis">Geospatial Analysis</h2>
-<p><em>Insert Grid Style Blog posts here</em></p>
+<section id="capstone-projects" class="level2">
+<h2 class="anchored" data-anchor-id="capstone-projects">Capstone Projects</h2>
 </section>
-<section id="data-viz" class="level2">
-<h2 class="anchored" data-anchor-id="data-viz">Data Viz</h2>
-</section>
-<section id="section" class="level2">
-<h2 class="anchored" data-anchor-id="section"></h2>
-
-
-
-</section>
-
-<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
+<section id="geospatial-analysis-remote-sensing" class="level2">
+<h2 class="anchored" data-anchor-id="geospatial-analysis-remote-sensing">Geospatial Analysis &amp; Remote Sensing</h2>
+<p>The goal of this course was to introduce spatial modeling and analytic techniques of geographic information science to the Master of Environmental Data Science students. This course focused on creating open-source, reproducible workflows for geospatial problem solving in environmental sciences as well as working with different types of remotely sensed data. With an added focus on incorporating environmental justice into our project scope, we routinely worked with U.S. Census tract data to practice considering the human element behind data. Some of the key topics for this course included: -Understanding Geospatial Datatypes: Vector vs Raster Data Manipulation -How we collect remotely sensed data: Active vs Passive Remote Sensing</p>
+<section id="check-out-my-work" class="level5">
+<h5 class="anchored" data-anchor-id="check-out-my-work">Check out my work:</h5>
+<div id="listing-Geospatial" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1702536183391" data-listing-reading-time-sort="6">
-<a href="./blog_posts/2023-12-13/Blog_post_version.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="blog_posts/2023-12-13/Blog_post_version_files/figure-html/f6fe1edd-7717-40ce-b5db-00d6b0c74901-1-AQIplot.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Impact of the Thomas Fire on Santa Barbara County Air Quality and Land Cover Change
-</h5>
-<div class="card-text listing-description">
-Author: Heather Childers
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1701895655470" data-listing-reading-time-sort="3">
-<a href="./blog_posts/2023-12-06/STAC (1).html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=naip&item=ca_m_3411935_sw_11_060_20200521&assets=image&asset_bidx=image|1%2C2%2C3&format=png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Using the Microsoft Planetary Computer
-</h5>
-<div class="card-text listing-description">
-We use the Client function from the pystac_client package to access the catalog:
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="2" data-categories="MEDS,R" data-listing-date-sort="1710572400000" data-listing-file-modified-sort="1710731415339" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="54">
-<a href="./blog_posts/2024-3-16/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="blog_posts/2024-3-16/DataViz Final Infographic.jpg" alt="This image shows an inforgraphic of 21st century energy transformations and trends. The graphs shows in the infographic are described in the document below, along with the code on how to create each graph. The takeaway message of the infographic is that energy usage has plateaued in the 21st century due to technological advances that have reduced the energy intensity of processes that use energy at the national-sector level." style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-21st Century Energy Evolution: Trends &amp; Transformations
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('MEDS'); return false;">
-MEDS
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('R'); return false;">
-R
-</div>
-</div>
-<div class="card-text listing-description">
-Data Viz Final Project
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Heather Childers
-</div>
-<div class="listing-date">
-Mar 16, 2024
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="3" data-categories="MEDS,R" data-listing-date-sort="1702627200000" data-listing-file-modified-sort="1702683366756" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8">
-<a href="./blog_posts/2023-12-14/Stats.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="blog_posts/2023-12-14/lulc2021.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Impact of Land Use Change on Water Storage in the Yolo County Area
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('MEDS'); return false;">
-MEDS
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('R'); return false;">
-R
-</div>
-</div>
-<div class="card-text listing-description">
-Statistics Final Report
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Heather Childers
-</div>
-<div class="listing-date">
-Dec 15, 2023
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="4" data-categories="MEDS,R" data-listing-date-sort="1702195200000" data-listing-file-modified-sort="1702714428258" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10">
-<a href="./blog_posts/2023-12-15/index.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="0" data-categories="MEDS,R" data-listing-date-sort="1702195200000" data-listing-file-modified-sort="1702714428258" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10">
+<a href="./Geospatial_Blogs/2023-12-15/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img src="./blog_posts/2023-12-15/Graph.png" class="thumbnail-image card-img" style="height: 150px;">
+<img src="./Geospatial_Blogs/2023-12-15/Graph.png" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
 Exploring the Socioeconomic Impacts of the 2021 Blackout in Houston, Texas
 </h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('MEDS'); return false;">
-MEDS
-</div>
-<div class="listing-category" onclick="window.quartoListingCategory('R'); return false;">
-R
-</div>
-</div>
 <div class="card-text listing-description">
 Geospatial Final Project
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Heather Childers
-</div>
-<div class="listing-date">
-Dec 10, 2023
-</div>
-</div>
-</div>
-</div>
-</a>
-</div>
-<div class="g-col-1" data-index="5" data-categories="MEDS" data-listing-date-sort="1702195200000" data-listing-file-modified-sort="1703116333953" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="9">
-<a href="./blog_posts/2023-11-06_practice_blog_post/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img src="./blog_posts/2023-11-06_practice_blog_post/PovIndex.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-A Comparison of Common Indices Used to Measure Poverty and Inequality
-</h5>
-<div class="listing-categories">
-<div class="listing-category" onclick="window.quartoListingCategory('MEDS'); return false;">
-MEDS
-</div>
-</div>
-<div class="card-text listing-description">
-The goal of this paper is to summarize some of the most commonly used indices for measuring poverty and inequalities for a non-technical audience while providing an accurate…
 </div>
 <div class="card-attribution card-text-small justify">
 <div class="listing-author">
@@ -374,7 +230,24 @@ Dec 10, 2023
 <div class="listing-no-matching d-none">
 No matching items
 </div>
-</div></main> <!-- /main -->
+</div>
+</section>
+</section>
+<section id="data-visualization" class="level2">
+<h2 class="anchored" data-anchor-id="data-visualization">Data Visualization</h2>
+</section>
+<section id="machine-learning" class="level2">
+<h2 class="anchored" data-anchor-id="machine-learning">Machine Learning</h2>
+</section>
+<section id="python-for-envoronmental-data-science" class="level2">
+<h2 class="anchored" data-anchor-id="python-for-envoronmental-data-science">Python for Envoronmental Data Science</h2>
+<p>##Environmental Policy Analysis for Data Science</p>
+
+
+
+</section>
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

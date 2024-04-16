@@ -8,6 +8,14 @@ $text_color: #131515;
 
 //Import fonts
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Playfair+Display:wght@400;700&display=swap');
+//@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&family=Nunito:wght@300;800&family=Roboto+Mono:wght@400;700&display=swap');
+//@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+// fonts
+$nunito: 'Lato', sans-serif; 
+$playfair: 'Playfair Display', Serif;
+
 
 //base Document bg
 $navbar-bg: $orange;
@@ -17,18 +25,38 @@ $footer-bg: $orange;
 $link-color:$purple;
 
 /*-- scss:rules --*/
-h1 {
-  letter-spacing: 3px;
+h1, h2, h3, h4, h5, h6 {
+  font-family: $playfair; 
+  letter-spacing: 2px;
+  font-weight: 700;
   color: $text_color;
 }
 
-h2 {
-  letter-spacing: 2px;
+body {
+  font-family: $nunito;
+  line-height: 1.5; 
+  font-size: 19.5px;
+  font-weight: 400;
   color: $text_color;
 }
 
-h3 {
+// figure caption text styling
+.figure-caption {
+  color: $text_color;
+  font-style: italic;
+}
+
+.menu-text {
+  font-family: $playfair; 
   letter-spacing: 2px;
+  font-weight: 400;
+  color: $text_color;
+}
+
+.navbar-title {
+  font-family: $playfair; 
+  letter-spacing: 1px;
+  font-weight: 700;
   color: $text_color;
 }
 
