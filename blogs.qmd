@@ -1,10 +1,29 @@
 ---
-title: "Blog Posts"
+title: "Relevant Coursework"
 listing: 
-  contents: blog_posts
-  type: grid
-  sort: "date desc"
-  categories: true
+  - id: Geospatial
+    contents: "Geospatial_Blogs/2023-12-15/index.qmd"
+    type: grid
 ---
 
-### **Here is where I will include blog posts from my Master of Environmental Data Science Program**
+#### **To get an idea of the kind of projects I've completed in each class**
+
+## Capstone Projects
+
+## Geospatial Analysis & Remote Sensing
+The goal of this course was to introduce spatial modeling and analytic techniques of geographic information science to the Master of Environmental Data Science students. This course focused on creating open-source, reproducible workflows for geospatial problem solving in environmental sciences as well as working with different types of remotely sensed data. With an added focus on incorporating environmental justice into our project scope, we routinely worked with U.S. Census tract data to practice considering the human element behind data. Some of the key topics for this course included:
+-Understanding Geospatial Datatypes: Vector vs Raster Data Manipulation
+-How we collect remotely sensed data: Active vs Passive Remote Sensing
+
+##### Check out my work:
+
+:::{#Geospatial}
+:::
+
+## Data Visualization
+
+## Machine Learning
+
+## Python for Envoronmental Data Science
+
+##Environmental Policy Analysis for Data Science

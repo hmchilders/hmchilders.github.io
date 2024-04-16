@@ -1,5 +1,5 @@
 ---
-title: "Heather Childers"
+title: "Welcome in!"
 image: images/profile.jpg
 toc: false
 about: 
@@ -14,11 +14,7 @@ about:
       href: https://github.com/hmchilders
       icon: github
     - text: Email Me!
-      href: mailto::hmchilders@ucsb.edu
+      href: mailto::hmchilders@bren.ucsb.edu
 ---
 
-## Hello!
-
-This is a skeleton of my website that will be filled in as I continue my progress throughout the MEDS program.
-
-STAY TUNED!
+I'm Heather, and I'm thrilled to share snippets of my life with you here. Showcasing my education in Engineering and Data Science alongside my extracurricular pursuits and passion projects under a single label, or one-page resume, can be challenging. My hope is that this website will provide a holistic view of who I am and serve as a time capsule of my accomplishments in early adulthood. Take a look around and reach out if any of my projects interest you!
