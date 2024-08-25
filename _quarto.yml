@@ -10,9 +10,9 @@ website:
         text: Home
       - about.qmd
       - href: blogs.qmd
-        text: Relevant Coursework
+        text: Highlighted Coursework
       - href: xtra.qmd
-        text: Extracurriculars
+        text: Leadership
       - href: PasProj.qmd
         text: Passions
       - href: cv/Resume.pdf

@@ -6,24 +6,39 @@ listing:
     type: grid
 ---
 
-#### **To get an idea of the kind of projects I've completed in each class**
+### Upcoming Opportunities I'm excited about
 
-## Capstone Projects
+###### GIS for Climate Action: Esri Training MOOC using AcrGIS Pro
 
-## Geospatial Analysis & Remote Sensing
+###### LEED Certification
+
+###### EIT Certification
+
+
+### Capstone Projects
+
+#### MEDS Capstone
+
+#### Undergrad Capstone
+
+
+#### Relevant Coursework
+Check out some of the projects I've completed using R, Python, and SQL as part of my Master of Environmental Data Science
+
+##### Geospatial Analysis & Remote Sensing
 The goal of this course was to introduce spatial modeling and analytic techniques of geographic information science to the Master of Environmental Data Science students. This course focused on creating open-source, reproducible workflows for geospatial problem solving in environmental sciences as well as working with different types of remotely sensed data. With an added focus on incorporating environmental justice into our project scope, we routinely worked with U.S. Census tract data to practice considering the human element behind data. Some of the key topics for this course included:
 -Understanding Geospatial Datatypes: Vector vs Raster Data Manipulation
 -How we collect remotely sensed data: Active vs Passive Remote Sensing
 
-##### Check out my work:
+###### Check out my work:
 
 :::{#Geospatial}
 :::
 
-## Data Visualization
+##### Data Visualization
 
-## Machine Learning
+##### Machine Learning
 
-## Python for Envoronmental Data Science
+##### Python for Envoronmental Data Science
 
-##Environmental Policy Analysis for Data Science
+##### Environmental Policy Analysis for Data Science
