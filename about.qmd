@@ -1,9 +1,11 @@
 ---
 title: "About Me"
+subtitle: "An introduction to my educational journey and how community in STEM has shaped my worldview"
+title-block-banner: true
 image: images/aboutme.jpeg
 toc: false
 about: 
-  template: trestles
+  template: jolla
   links: 
     - text: LinkedIn
       href: https://www.linkedin.com/in/heather-childers-0b764a232/
@@ -15,6 +17,26 @@ about:
       href: mailto::hmchilders@ucsb.edu
 ---
 
-### **A little bit about me...**
+It was impossible to live in Santa Barbara and not be captivated by the environmental and ecological diversity surrounding me. I saw firsthand how our built world interacts with nature through the impact of human activities on ecosystems and how science can be used as a tool for sustainability. This awareness led me to explore biological and agricultural sciences, recognizing the critical role of terrestrial systems in addressing climate challenges. I became fascinated with how scientific advancements in agriculture, ecology, and sustainability could be used to protect the very landscapes I grew up admiring.
 
-I am a graduate student at the Bren School of Environmental Science & Management pursuing a Master of Environmental Data Science degree. I recently graduated from the University of California, Davis, with a Bachelor of Science in Biological and Agricultural Engineering and a minor in Atmospheric Science. While at UC Davis, I worked with a team of undergraduate students to complete an 11-month capstone project for the College of Engineering. My team developed a solid-state fermentation bioreactor to scale up the production of protein-enriched animal feed from almond hulls. Outside of class, I enjoyed being active in the UC Davis community as President of the Society of Biological Engineers and Ambassador for the Department of Biological and Agricultural Engineering. I have continued my community involvement at UCSB as a Social Co-chair for the Womxn in Science and Engineering club and a MEDS Class Co-chair. My goal is to become a leader in the scientific community and create comprehensive climate models that contextualize the impacts of global climate change.
+My passion for STEM was ignited at the Dos Pueblos Engineering Academy (DPEA), an immersive program that challenged me to think critically, solve problems creatively, and develop hands-on engineering skills. From designing mechanical systems to collaborating on team projects, I thrived in an environment that encouraged curiosity, technical expertise, and innovation. These experiences laid the foundation for my ability to tackle complex challenges; a skill I carry with me in my research today.
+
+Beyond academics, my time at Dos Pueblos High School instilled in me a strong sense of community and responsibility. I was encouraged to use my successes not just for personal growth but as a way to uplift others. By my senior year of high school, I was a teaching assistant for two class periods a day, working directly with students to build their confidence and skills in STEM. I also scheduled regular tutoring sessions in statistics, biology, algebra, and Spanish through bi-weekly seminars, helping to create a more inclusive and supportive learning environment.
+
+#### Cultivating Knowledge and Community at UC Davis
+
+When I discovered the Biological and Agricultural Engineering (BAE) Department at UC Davis, I knew I had found a place where I could continue to explore problem-solving at the intersection of my two passions: life sciences and engineering. My academic journey in the Biological Systems Engineering major culminated in my team of undergraduate students completing an 11-month capstone project developing a solid-state fermentation bioreactor to scale up the production of protein-enriched animal feed from almond hulls. Our innovative design optimized the resource intensity of the fermentation process and increased protein content to reduce food waste and utilize the final product in alternative markets.
+
+While smaller than some other engineering departments at UC Davis, the Biological and Agricultural Engineering Department shared many community values of collaboration and service that I grew up with. This encouraged me to pursue leadership positions throughout the department, including the President of the Society of Biological Engineers, a BAE ambassador, and the Undergraduate Representative for the graduating class of 2022. Through these positions, I hosted department-wide events to strengthen our community and build connections between staff and students, organized social and study hours to connect students and encourage student involvement, and presented to the BAE Leadership Board to provide insight into the student experience and suggest future improvements.
+
+When I had the opportunity to take elective classes, I was always drawn to learning more about earth systems and atmospheric sciences. By the time I graduated, I had taken enough additional courses that I was able to graduate with a minor in atmospheric science. While my major prepared me for problem-solving in the real world, a minor in atmospheric science left me eager to learn more. I couldn't help but feel that crucial problems were waiting to be solved, but I lacked the modeling and data analysis skills to bring those solutions to life. 
+
+#### **Deepening My Passions at the Bren School of Environmental Science & Management and UC Santa Barbara**
+
+My educational journey led me back to my loving home in Santa Barbara where I where I completed a Master of Environmental Data Science (MEDS) degree from the Bren School of Environmental Science & Management at UC Santa Barbara. When I applied, I knew this program checked all the boxes for me as an opportunity to learn fundamental coding skills in R, Python, and SQL in an environmentally focused, interdisciplinary program with strong community values and opportunities for leadership.
+
+At Bren, I developed a deep understanding of how scientific research, data-driven solutions, and interdisciplinary collaboration could drive real-world environmental impact. My coursework and projects allowed me to apply fundamentals in geospatial analysis, machine learning, and data visualization to applications in mapping, climate modeling, and environmental impact assessment while incorporating elements of reproducibility, environmental justice and best practices for version control in collaborative coding. These elements came together in my Master's Capstone Project: Understanding the Influence of Parameter Value Uncertainty on Climate Model Output (more info about this project can be found on this page).
+
+Outside of the classroom, Bren strengthened my commitment to mentorship and leadership. As class co-chair, a member of the Dean's Advisory Council, and social co-chair for the Women in Science and Engineering (WISE) Club, I worked to foster a strong, inclusive community. I found joy in creating spaces for students to connect, grow, and thrive, ensuring that mentorship and support were integral parts of our academic experience.
+
+#### 

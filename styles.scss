@@ -1,9 +1,10 @@
 /*-- scss:defaults --*/
 //Colors
-$green: #D4EDC2;
-$orange: #FFF6C8;
-$purple: #AE6FAA;
-$blue: #CEE1F2;
+$white: #FEF8EA;
+$apricot: #FCCEB3;
+$green: #AFCCA6;
+$honeydew: #D3E0D3;
+$brown: #91681E;
 $text_color: #131515;
 
 //Import fonts
@@ -18,11 +19,11 @@ $playfair: 'Playfair Display', Serif;
 
 
 //base Document bg
-$navbar-bg: $orange;
+$navbar-bg: $white;
 $navbar-fg:$text_color;
-$body_bg: $blue;
-$footer-bg: $orange;
-$link-color:$purple;
+$body_bg: $honeydew;
+$footer-bg: $white;
+$link-color:$brown;
 
 /*-- scss:rules --*/
 h1, h2, h3, h4, h5, h6 {
@@ -66,4 +67,9 @@ body {
 
 .center-text {
   text-align: center;
+}
+
+.navbar-brand img { 
+  max-height: 95px;
+  width: auto;
 }

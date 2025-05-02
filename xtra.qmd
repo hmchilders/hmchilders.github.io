@@ -1,21 +1,69 @@
 ---
-title: "Extracurricular Activities"
+title: "Leadership"
+subtitle: "When I'm outside the classroom, you can find me contributing to my community"
+title-block-banner: true
 ---
 
-## Involvement at the Bren School of Environmental Science & Management
+### **Society of Biological Engineers Alumni Advisor** 
 
--   MEDS Co-Chair
+##### Dept. of Bio & Ag Engineering at UC Davis (9/25--Present)
 
--   Dean's Advisory Council Member
+Coordinated with the department chair, faculty advisor, and organizing board to understand the needs of the Biological Systems Engineering student body for professional development workshops
 
-## Involvement at UC Santa Barbara
+Curated original material specific to the coursework completed by the Biological Systems Engineering students to help them navigate their career paths, networking skills, and plans for higher education
 
--   Wise
+### **Dean\'s Advisory Council Member** 
 
-## Involvement at UC Davis
+##### Bren School of Environmental Science & Management (9/23--6/24)
 
--   SOBE President and Event Coordinator
+Condensed live feedback and survey results from active students to provide the Dean with summaries of key concerns and actionable solutions, ensuring student satisfaction for current and future cohorts
 
--   Undergraduate Representative
+Cultivated open communication between the Dean, staff, and students to improve the student experience
 
--   BAE Ambassador
+### **MEDS Class of 2024 Co-chair** 
+
+##### Bren School of Environmental Science & Management (9/23--6/24)
+
+Coordinated with the Bren Student Leadership Committee to align students on pressing issues
+
+Organized community-building events and assisted Bren staff with outreach and fundraising events for improvements and diversity scholarships
+
+Effectively managed multiple schedules by maintaining the MEDS Assignments Google Calendar, ensuring students were up to date on class deadlines, events, and important announcements
+
+### **Womxn in Science and Engineering Social Chair** 
+
+##### University of California, Santa Barbara (5/23--6/24)
+
+Anonymized and reviewed annual fellowship applications of graduate student summer funding for the UC Santa Barbara Graduate Division to facilitate equitable distribution of funding to women in STEM
+
+Organized regular club events, including making flyers and Instagram posts, reserving spaces, and coordinating presenters, all while working within a budget set by the finance chair
+
+Planned outreach events for youth and women in STEM at local high schools, museums, and other Santa Barbara-based Women in STEM events
+
+### **Society of Biological Engineers President and Events Coordinator** 
+
+##### UC Davis (6/20--6/22)
+
+Spearheaded the club\'s transition from virtual to in-person events while following safety guidelines
+
+Organized various events, including Barbecues, bowling, study sessions, game nights, bike rides, industry speakers, and collaborations with the Graduate Student Association and the Internship and Career Center
+
+Registered the club with all officers and current members to the university, attended informational sessions for club leaders, and filled out necessary forms for participation in club outreach events
+
+Responsible for documenting club purchases for events and placing/receiving orders for marketing materials
+
+### **Undergraduate Representative for the Biological System Engineering Major** 
+
+##### UC Davis (9/22--6/22)
+
+Presented to the Biological and Agricultural Engineering Department Leadership Board regarding student involvement, employment opportunities on campus and after graduation
+
+Implemented solutions based on student feedback, including providing the senior class with custom stoles for graduation and creating individual certificates for the department graduation brunch
+
+### **Student Ambassador for the Biological & Agricultural Engineering Department** 
+
+##### UC Davis (9/22--6/22)
+
+Collaborated with the department's outreach team to work on increasing their social media presence through student Q and A posts, Instagram takeovers, TikToks, and upcoming event information
+
+Provided one-on-one peer mentoring for incoming freshmen and transfer students about getting involved on campus and setting up a manageable course load each quarter

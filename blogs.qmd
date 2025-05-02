@@ -1,44 +1,58 @@
 ---
-title: "Relevant Coursework"
-listing: 
-  - id: Geospatial
-    contents: "Geospatial_Blogs/2023-12-15/index.qmd"
-    type: grid
+title: "Projects"
+subtitle: "A peek into my relevant coursework, capstone projects, and my efforts to demostrate life-long learning"
+title-block-banner: true
+#listing: 
+#  - id: Geospatial
+#    contents: "Geospatial_Blogs/2023-12-15/index.qmd"
+#    type: grid
 ---
 
-### Upcoming Opportunities I'm excited about
+### Recent Certifications
 
-###### GIS for Climate Action: Esri Training MOOC using AcrGIS Pro
+#### Esri Massive Open Online Courses
 
-###### LEED Certification
+-   GIS for Climate Action \[view certificate\]
 
-###### EIT Certification
-
+-   Make an Impact with Modern Geo Apps \[view certificate\]
 
 ### Capstone Projects
 
-#### MEDS Capstone
+#### Understanding the Influence of Parameter Value Uncertainty on Climate Model Outputs
 
-#### Undergrad Capstone
+Climate models are computer simulations that attempt to replicate the complex interactions between Earth\'s systems. Improving the accuracy of climate models relies on evaluating uncertainty and minimizing error. The Climate and Global Dynamics Lab at the National Center for Atmospheric Research (NCAR) has recently carried out a Parameter Perturbation Experiment (PPE) to understand how the uncertainty of parameter values affected the output of their model, the Community Land Model (CLM); which simulates terrestrial processes. While the necessary data for the PPE has been collected, the data is stored in a collection of files that are difficult to interpret in their current form. The current website hosts visualizations for a portion of the PPE data, but contains no visualizations for data that more closely simulates Earth system interactions. These issues can be mitigated by developing an emulator with the internal complexity to isolate a one-to-one relationship between a parameter and climate variable, then display the predicted relationship. A publicly available emulator with these capabilities will allow scientists to easily interpret complex climate model outputs and offer insights on parameter-variable relationships that are not being predicted accurately by the model; which can lead to increased accuracy and precision of climate models.
 
+#### Development of a Solid State Fermentation Reactor for High-Value Protein-Enriched Feed from Almond Hulls
 
-#### Relevant Coursework
+Each year 4.5 billion pounds of almond hulls are produced in California as a byproduct of the almond industry. Currently almond hulls are being used as feed for the dairy industry, but there is a need to find alternative markets. From previous research, it was discovered that the protein content of almond hulls could be increased from 4-6% up to 15% for use as poultry feed through solid state fermentation. The goal of this project is to scale up the fermentation process and design a bioreactor for fermenting almond hulls using M. Thermophila under controlled conditions. The bioreactor holds roughly 100 grams of almond hull substrate per batch and is kept at 50°C with a relative humidity of 70-90%. After 96 hours of fermentation and post processing, a feed product with an enriched protein content of up to 15% is produced.
+
+### Relevant Coursework
+
 Check out some of the projects I've completed using R, Python, and SQL as part of my Master of Environmental Data Science
 
-##### Geospatial Analysis & Remote Sensing
+#### Geospatial Analysis & Remote Sensing
+
 The goal of this course was to introduce spatial modeling and analytic techniques of geographic information science to the Master of Environmental Data Science students. This course focused on creating open-source, reproducible workflows for geospatial problem solving in environmental sciences as well as working with different types of remotely sensed data. With an added focus on incorporating environmental justice into our project scope, we routinely worked with U.S. Census tract data to practice considering the human element behind data. Some of the key topics for this course included:
--Understanding Geospatial Datatypes: Vector vs Raster Data Manipulation
--How we collect remotely sensed data: Active vs Passive Remote Sensing
+
+-   Understanding Geospatial Datatypes: Vector vs Raster Data Manipulation
+
+-   How we collect remotely sensed data: Active vs Passive Remote Sensing
 
 ###### Check out my work:
 
-:::{#Geospatial}
-:::
+#::: {#Geospatial}
+#:::
 
-##### Data Visualization
+#### Data Visualization
 
-##### Machine Learning
+#### Machine Learning
 
-##### Python for Envoronmental Data Science
+#### Python for Environmental Data Science
 
-##### Environmental Policy Analysis for Data Science
+#### Environmental Policy Analysis for Data Science
+
+### Upcoming Opportunities I'm excited about
+
+##### LEED Certification
+
+##### EIT Certification

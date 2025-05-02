@@ -4,21 +4,27 @@ project:
 
 website:
   title: "Heather Childers"
+  favicon: images/logo.png
   navbar:
+    title: false
+    logo: images/logo.png
+    logo-alt: "A pastel-colored illustration depicting a thriving community garden, showcasing innovative agricultural, climate engineering, and data analysis techniques.  The artwork includes floral elements, reflecting scientific principles in a creative and accessible way. The style blends scientific illustration with artistic expression, emphasizing community building through sustainable practices."
     left:
       - href: index.qmd
         text: Home
-      - about.qmd
+      - href: about.qmd
+        text: About Me
       - href: blogs.qmd
-        text: Highlighted Coursework
+        text: Projects
       - href: xtra.qmd
         text: Leadership
       - href: PasProj.qmd
         text: Passions
-      - href: cv/Resume.pdf
-        text: Resume
+
         
-    right: 
+    right:
+      - href: cv/Childers_CV.pdf
+        text: CV
       - href: https://github.com/hmchilders
         icon: github
   page-footer: 
