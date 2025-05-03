@@ -2,10 +2,10 @@
 title: "Projects"
 subtitle: "A peek into my relevant coursework, capstone projects, and my efforts to demostrate life-long learning"
 title-block-banner: true
-#listing: 
-#  - id: Geospatial
-#    contents: "Geospatial_Blogs/2023-12-15/index.qmd"
-#    type: grid
+listing: 
+  - id: Geospatial
+    contents: "Geospatial_Blogs/2023-12-15/index.qmd"
+    type: grid
 ---
 
 ### Recent Certifications
@@ -40,8 +40,8 @@ The goal of this course was to introduce spatial modeling and analytic technique
 
 ###### Check out my work:
 
-#::: {#Geospatial}
-#:::
+::: {#Geospatial}
+:::
 
 #### Data Visualization
 
