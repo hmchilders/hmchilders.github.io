@@ -1,17 +1,18 @@
 ---
 title: "Exploring the Socioeconomic Impacts of the 2021 Blackout in Houston, Texas" 
 description: "Geospatial Analysis & Remote Sensing Course Project"
+freeze: auto
 author: 
   - name: Heather Childers
     url: hmchilders.github.io/
     affiliation: Master of Environmental Data Science Program
-    affiliation-url: https://ucsb-meds.github.io/
+    affiliation-url: https://bren.ucsb.edu/masters-programs/master-environmental-data-science
     #orcid: 
 date: 12-10-2023
-categories: [MEDS, R]
+categories: [MEDS, R, Geospatial]
 image: Graph.png
 citation: 
-  url: hmchilders.github.io/blogs/2023-12-15
+  url: hmchilders.github.io/Geospatial_Blogs/2023-12-15
 ---
 
 # Exploring the Socioeconomic Impacts of the 2021 Blackout in Houston, Texas

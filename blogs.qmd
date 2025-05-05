@@ -4,7 +4,7 @@ subtitle: "A peek into my relevant coursework, capstone projects, and my efforts
 title-block-banner: true
 listing: 
   - id: Geospatial
-    contents: "Geospatial_Blogs/2023-12-15/index.qmd"
+    contents: "Geospatial_Blogs/"
     type: grid
 ---
 
@@ -12,15 +12,15 @@ listing:
 
 #### Esri Massive Open Online Courses
 
--   GIS for Climate Action \[view certificate\]
+-   GIS for Climate Action [view certificate](certificates/GISClimCert.pdf){target="_blank"}
 
--   Make an Impact with Modern Geo Apps \[view certificate\]
+-   Make an Impact with Modern Geo Apps [view certificate](certificates/GeoAppCert.pdf){target="_blank"}
 
 ### Capstone Projects
 
 #### Understanding the Influence of Parameter Value Uncertainty on Climate Model Outputs
 
-Climate models are computer simulations that attempt to replicate the complex interactions between Earth\'s systems. Improving the accuracy of climate models relies on evaluating uncertainty and minimizing error. The Climate and Global Dynamics Lab at the National Center for Atmospheric Research (NCAR) has recently carried out a Parameter Perturbation Experiment (PPE) to understand how the uncertainty of parameter values affected the output of their model, the Community Land Model (CLM); which simulates terrestrial processes. While the necessary data for the PPE has been collected, the data is stored in a collection of files that are difficult to interpret in their current form. The current website hosts visualizations for a portion of the PPE data, but contains no visualizations for data that more closely simulates Earth system interactions. These issues can be mitigated by developing an emulator with the internal complexity to isolate a one-to-one relationship between a parameter and climate variable, then display the predicted relationship. A publicly available emulator with these capabilities will allow scientists to easily interpret complex climate model outputs and offer insights on parameter-variable relationships that are not being predicted accurately by the model; which can lead to increased accuracy and precision of climate models.
+Climate models are computer simulations that attempt to replicate the complex interactions between Earth's systems. Improving the accuracy of climate models relies on evaluating uncertainty and minimizing error. The Climate and Global Dynamics Lab at the National Center for Atmospheric Research (NCAR) has recently carried out a Parameter Perturbation Experiment (PPE) to understand how the uncertainty of parameter values affected the output of their model, the Community Land Model (CLM); which simulates terrestrial processes. While the necessary data for the PPE has been collected, the data is stored in a collection of files that are difficult to interpret in their current form. The current website hosts visualizations for a portion of the PPE data, but contains no visualizations for data that more closely simulates Earth system interactions. These issues can be mitigated by developing an emulator with the internal complexity to isolate a one-to-one relationship between a parameter and climate variable, then display the predicted relationship. A publicly available emulator with these capabilities will allow scientists to easily interpret complex climate model outputs and offer insights on parameter-variable relationships that are not being predicted accurately by the model; which can lead to increased accuracy and precision of climate models.
 
 #### Development of a Solid State Fermentation Reactor for High-Value Protein-Enriched Feed from Almond Hulls
 
@@ -50,9 +50,3 @@ The goal of this course was to introduce spatial modeling and analytic technique
 #### Python for Environmental Data Science
 
 #### Environmental Policy Analysis for Data Science
-
-### Upcoming Opportunities I'm excited about
-
-##### LEED Certification
-
-##### EIT Certification
