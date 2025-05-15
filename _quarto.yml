@@ -18,8 +18,8 @@ website:
         text: Projects
       - href: xtra.qmd
         text: Leadership
-      - href: PasProj.qmd
-        text: Passions
+#      - href: PasProj.qmd
+#        text: Passions
 
         
     right:

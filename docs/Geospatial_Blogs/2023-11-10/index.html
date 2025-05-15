@@ -1,0 +1,1259 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.450">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Heather Childers">
+<meta name="dcterms.date" content="2023-12-10">
+<meta name="description" content="Geospatial Analysis &amp; Remote Sensing Course Project">
+
+<title>Heather Childers - Investigate the Legacy of Redlining in Current Environmental (In)justice</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../images/logo.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <img src="../../images/logo.png" alt="A pastel-colored illustration depicting a thriving community garden, showcasing innovative agricultural, climate engineering, and data analysis techniques.  The artwork includes floral elements, reflecting scientific principles in a creative and accessible way. The style blends scientific illustration with artistic expression, emphasizing community building through sustainable practices." class="navbar-logo">
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html" rel="" target="">
+ <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../about.html" rel="" target="">
+ <span class="menu-text">About Me</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../blogs.html" rel="" target="">
+ <span class="menu-text">Projects</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../xtra.html" rel="" target="">
+ <span class="menu-text">Leadership</span></a>
+  </li>  
+</ul>
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../cv/Childers_CV.pdf" rel="" target="">
+ <span class="menu-text">CV</span></a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/hmchilders" rel="" target=""><i class="bi bi-github" role="img">
+</i> 
+ <span class="menu-text"></span></a>
+  </li>  
+</ul>
+            <div class="quarto-navbar-tools">
+</div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#investigate-the-legacy-of-redlining-in-current-environmental-injustice" id="toc-investigate-the-legacy-of-redlining-in-current-environmental-injustice" class="nav-link active" data-scroll-target="#investigate-the-legacy-of-redlining-in-current-environmental-injustice">Investigate the Legacy of Redlining in Current Environmental (In)justice</a>
+  <ul class="collapse">
+  <li><a href="#project-overview" id="toc-project-overview" class="nav-link" data-scroll-target="#project-overview">Project Overview</a></li>
+  <li><a href="#about-the-data" id="toc-about-the-data" class="nav-link" data-scroll-target="#about-the-data">About the Data</a>
+  <ul class="collapse">
+  <li><a href="#ejscreen" id="toc-ejscreen" class="nav-link" data-scroll-target="#ejscreen"><strong>EJScreen</strong></a></li>
+  <li><a href="#holc-redlining" id="toc-holc-redlining" class="nav-link" data-scroll-target="#holc-redlining"><strong>HOLC Redlining</strong></a></li>
+  <li><a href="#biodiversity-observations" id="toc-biodiversity-observations" class="nav-link" data-scroll-target="#biodiversity-observations"><strong>Biodiversity observations</strong></a></li>
+  </ul></li>
+  <li><a href="#workflow" id="toc-workflow" class="nav-link" data-scroll-target="#workflow">Workflow</a>
+  <ul class="collapse">
+  <li><a href="#exploring-the-ejscreen-dataset-and-understanding-key-characteristics-of-the-census-groups" id="toc-exploring-the-ejscreen-dataset-and-understanding-key-characteristics-of-the-census-groups" class="nav-link" data-scroll-target="#exploring-the-ejscreen-dataset-and-understanding-key-characteristics-of-the-census-groups">1. Exploring the EJscreen Dataset and Understanding Key Characteristics of the Census Groups</a></li>
+  <li><a href="#analyzing-historical-redlining-in-los-angeles-and-its-legacy-on-present-day-environmental-justice" id="toc-analyzing-historical-redlining-in-los-angeles-and-its-legacy-on-present-day-environmental-justice" class="nav-link" data-scroll-target="#analyzing-historical-redlining-in-los-angeles-and-its-legacy-on-present-day-environmental-justice">2. Analyzing historical redlining in Los Angeles and its legacy on present-day environmental justice</a></li>
+  <li><a href="#investigate-the-legacy-of-redlining-in-biodiversity-observations" id="toc-investigate-the-legacy-of-redlining-in-biodiversity-observations" class="nav-link" data-scroll-target="#investigate-the-legacy-of-redlining-in-biodiversity-observations">Investigate the legacy of redlining in biodiversity observations</a></li>
+  </ul></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content column-page-left" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Investigate the Legacy of Redlining in Current Environmental (In)justice</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">MEDS</div>
+    <div class="quarto-category">R</div>
+    <div class="quarto-category">Geospatial</div>
+    <div class="quarto-category">Environmental Justice</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    Geospatial Analysis &amp; Remote Sensing Course Project
+  </div>
+</div>
+
+<div class="quarto-title-meta-author">
+  <div class="quarto-title-meta-heading">Author</div>
+  <div class="quarto-title-meta-heading">Affiliation</div>
+  
+    <div class="quarto-title-meta-contents">
+    <p class="author"><a href="hmchilders.github.io/">Heather Childers</a> </p>
+  </div>
+    <div class="quarto-title-meta-contents">
+        <p class="affiliation">
+            <a href="https://bren.ucsb.edu/masters-programs/master-environmental-data-science">
+            Master of Environmental Data Science Program
+            </a>
+          </p>
+      </div>
+    </div>
+
+<div class="quarto-title-meta">
+
+      
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">December 10, 2023</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="investigate-the-legacy-of-redlining-in-current-environmental-injustice" class="level1">
+<h1>Investigate the Legacy of Redlining in Current Environmental (In)justice</h1>
+<section id="project-overview" class="level2">
+<h2 class="anchored" data-anchor-id="project-overview">Project Overview</h2>
+<p>Present-day environmental justice may reflect legacies of injustice in the past. The United States has a long history of racial segregation which is still visible. During the 1930’s the Home Owners’ Loan Corporation (HOLC), as part of the New Deal, rated neighborhoods based on their perceived safety for real estate investment. Their ranking system, (A (green), B (blue), C (yellow), D (red)) was then used to block access to loans for home ownership. Colloquially known as “redlining”, this practice has had widely-documented consequences not only for community wealth, but also health.<sup><a href="https://eds-223-geospatial.github.io/assignments/HW2.html#fn1">1</a></sup> Redlined neighborhoods have less greenery<sup><a href="https://eds-223-geospatial.github.io/assignments/HW2.html#fn2">2</a></sup> and are hotter than other neighborhoods.<sup><a href="https://eds-223-geospatial.github.io/assignments/HW2.html#fn3">3</a></sup></p>
+<p>Check out coverage by the <a href="https://www.nytimes.com/interactive/2020/08/24/climate/racism-redlining-cities-global-warming.html">New York Times</a>.</p>
+<p>A recent study found that redlining has not only affected the environments communities are exposed to, it has also shaped our observations of biodiversity.<sup><a href="https://eds-223-geospatial.github.io/assignments/HW2.html#fn4">4</a></sup> Community or citizen science, whereby individuals share observations of species, is generating an enormous volume of data. Ellis-Soto and co-authors found that redlined neighborhoods remain the most undersampled areas across 195 US cities. This gap is highly concerning, because conservation decisions are made based on these data.</p>
+<p>Check out coverage by <a href="https://eos.org/articles/bird-biodiversity-reports-reflect-cities-redlined-past?utm_source=EosBuzz&amp;mkt_tok=OTg3LUlHVC01NzIAAAGOx3ckQPpeDY3QyFKdUnBSYqILj3qLrgb_Q2lasphwcF90xEzMgjZFUo3NHsw3caXDcZe6I8D8qdVsSRr3wzhb6LKAQRgNo8ffhjieEbDwMw">EOS</a>.</p>
+</section>
+<section id="about-the-data" class="level2">
+<h2 class="anchored" data-anchor-id="about-the-data">About the Data</h2>
+<section id="ejscreen" class="level3">
+<h3 class="anchored" data-anchor-id="ejscreen"><strong>EJScreen</strong></h3>
+<p><strong>Data file:</strong> <code>ejscreen/EJSCREEN_2023_BG_StatePct_with_AS_CNMI_GU_VI.gdb</code></p>
+<p>We will be working with data from the United States Environmental Protection Agency’s EJScreen: Environmental Justice Screening and Mapping Tool.</p>
+<p>According to the <a href="https://www.epa.gov/ejscreen/purposes-and-uses-ejscreen">US EPA website</a>:</p>
+<blockquote class="blockquote">
+<p>This screening tool and data may be of interest to community residents or other stakeholders as they search for environmental or demographic information. It can also support a wide range of research and policy goals. The public has used EJScreen in many different locations and in many different ways.</p>
+<p>EPA is sharing EJScreen with the public:<br>
+- to be more transparent about how we consider environmental justice in our work,<br>
+- to assist our stakeholders in making informed decisions about pursuing environmental justice and,<br>
+- to create a common starting point between the agency and the public when looking at issues related to environmental justice.</p>
+</blockquote>
+<p>EJScreen provides on environmental and demographic information for the US at the Census <a href="https://en.wikipedia.org/wiki/Census_tract">tract</a> and <a href="https://en.wikipedia.org/wiki/Census_block_group">block group</a> levels. We will be working with data at the block group level that has been downloaded from the <a href="https://www.epa.gov/ejscreen/download-ejscreen-data">EPA site</a>. To understand the associated data columns, we will need to explore the following in the <code>data</code> folder:</p>
+<ul>
+<li><p>Technical documentation: <code>ejscreen-tech-doc-version-2-2.pdf</code></p></li>
+<li><p>Column descriptions: <code>EJSCREEN_2023_BG_Columns.xlsx</code></p></li>
+</ul>
+<p>You should also explore the <a href="https://www.epa.gov/ejscreen/limitations-and-caveats-using-ejscreen">limitations and caveats</a> of the data.</p>
+</section>
+<section id="holc-redlining" class="level3">
+<h3 class="anchored" data-anchor-id="holc-redlining"><strong>HOLC Redlining</strong></h3>
+<p><strong>Data file:</strong> <code>mapping-inequality/mapping-inequality-los-angeles.json</code></p>
+<p>A team of researchers, led by the <a href="https://dsl.richmond.edu/">Digital Scholarship Lab</a> at the University of Richmond have digitized maps and information from the HOLC as part of the <a href="https://dsl.richmond.edu/panorama/redlining/#loc=5/39.1/-94.58">Mapping Inequality</a> project.</p>
+<p>We will be working with maps of HOLC grade designations for Los Angeles. Information on the data can be found <a href="https://dsl.richmond.edu/panorama/redlining/#loc=5/39.1/-94.58&amp;text=downloads">here</a>.<sup><a href="https://eds-223-geospatial.github.io/assignments/HW2.html#fn5">5</a></sup></p>
+</section>
+<section id="biodiversity-observations" class="level3">
+<h3 class="anchored" data-anchor-id="biodiversity-observations"><strong>Biodiversity observations</strong></h3>
+<p><strong>Data file:</strong> <code>gbif-birds-LA.shp</code></p>
+<p>The <a href="https://eds-223-geospatial.github.io/assignments/gbif.org">Global Biodiversity Information Facility</a> is the largest aggregator of biodiversity observations in the world. Observations typically include a location and date that a species was observed.</p>
+<p>We will be working observations of birds from 2021 onward.</p>
+</section>
+</section>
+<section id="workflow" class="level2">
+<h2 class="anchored" data-anchor-id="workflow">Workflow</h2>
+<section id="exploring-the-ejscreen-dataset-and-understanding-key-characteristics-of-the-census-groups" class="level3">
+<h3 class="anchored" data-anchor-id="exploring-the-ejscreen-dataset-and-understanding-key-characteristics-of-the-census-groups">1. Exploring the EJscreen Dataset and Understanding Key Characteristics of the Census Groups</h3>
+<p>Let’s start by setting up our workflow. You’ll need to load the relevant packages for this project</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load relevant packages</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(sf)</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tmap)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tmaptools)</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(leaflet)</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(gt)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>You’ll also need to read in the data from the EJScreen Database</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Use st_read() to read in the data</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>ejscreen <span class="ot">&lt;-</span> <span class="fu">st_read</span>(<span class="st">"data/ejscreen/EJSCREEN_2023_BG_StatePct_with_AS_CNMI_GU_VI.gdb/"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Reading layer `EJSCREEN_StatePctiles_with_AS_CNMI_GU_VI' from data source 
+  `/Users/heatherchilders/Documents/MEDS/Personal Website/hmchilders.github.io/Geospatial_Blogs/2023-11-10/data/ejscreen/EJSCREEN_2023_BG_StatePct_with_AS_CNMI_GU_VI.gdb' 
+  using driver `OpenFileGDB'
+Simple feature collection with 243021 features and 223 fields
+Geometry type: MULTIPOLYGON
+Dimension:     XY
+Bounding box:  xmin: -19951910 ymin: -1617130 xmax: 16259830 ymax: 11554350
+Projected CRS: WGS 84 / Pseudo-Mercator</code></pre>
+</div>
+</div>
+<p>Let’s look at how low income groups are impacted by waste water discharge. We can do this by making a map of Los Angeles County, showing the proportion of low income homes in each census group. We can then indicate which areas experience above the 95th percentile of national values for waste water discharge by adding a centroid.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Filter the EJ Screen data to just the Los Angeles County and remove and missing data</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>cropped_LA <span class="ot">&lt;-</span> ejscreen <span class="sc">%&gt;%</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(CNTY_NAME <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">"Los Angeles County"</span>)) <span class="sc">%&gt;%</span> </span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">drop_na</span>()</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="co">#Now create a subgroup of just the census blocks in LA that are above the 95% for wastewater discharge</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>LA_95 <span class="ot">&lt;-</span> cropped_LA <span class="sc">%&gt;%</span> </span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(P_PWDIS <span class="sc">&gt;</span> <span class="dv">95</span>)</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a><span class="co">#Create the map of LA County with Income and Wastewater Variables </span></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a><span class="fu">tm_shape</span>(cropped_LA)<span class="sc">+</span> <span class="co">#Make a map of LA County</span></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tm_basemap</span>()<span class="sc">+</span></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tm_graticules</span>()<span class="sc">+</span> <span class="co">#add gridlines</span></span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>    <span class="fu">tm_scale_bar</span>(<span class="at">position =</span> <span class="fu">c</span>(<span class="st">"left"</span>, <span class="st">"bottom"</span>))<span class="sc">+</span> <span class="co">#Add a scalebar</span></span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tm_fill</span>(<span class="at">fill =</span> <span class="st">'LOWINCPCT'</span>, <span class="co">#Fill each area based on the proportion of low income families</span></span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>          <span class="at">fill.scale =</span> <span class="fu">tm_scale</span>(<span class="at">breaks =</span> <span class="fu">c</span>(<span class="dv">0</span>,.<span class="dv">10</span>,.<span class="dv">20</span>,.<span class="dv">30</span>,.<span class="dv">40</span>,.<span class="dv">50</span>,.<span class="dv">60</span>,.<span class="dv">70</span>,.<span class="dv">80</span>,.<span class="dv">90</span>, <span class="dv">1</span>)), <span class="co">#Set the breaks</span></span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>          <span class="at">fill.legend =</span> <span class="fu">tm_legend</span>(<span class="at">title =</span> <span class="st">'Proportion of Low Income Individuals'</span>))<span class="sc">+</span> <span class="co">#Add a legend title</span></span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tm_shape</span>(LA_95)<span class="sc">+</span> <span class="co">#Add the wastewater data</span></span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tm_symbols</span>(<span class="at">size =</span> <span class="fl">0.1</span>, <span class="co">#Set the size of the centroids</span></span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a>             <span class="at">col =</span> <span class="st">"red"</span>) <span class="co">#Set the color of the centriods</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>We can see what percentage of census block groups have less than 5% of the population considered low income.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Create a new dataframe that filters the LA County dataset to just the census groups that have less than 5% of the population considered low income</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>top_5_income <span class="ot">&lt;-</span> cropped_LA <span class="sc">%&gt;%</span> </span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(LOWINCPCT <span class="sc">&lt;</span> <span class="fl">0.05</span>)</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate the percentage </span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>pct_top <span class="ot">&lt;-</span> (<span class="fu">length</span>(top_5_income<span class="sc">$</span>LOWINCPCT)<span class="sc">/</span><span class="fu">length</span>(cropped_LA<span class="sc">$</span>LOWINCPCT))<span class="sc">*</span><span class="dv">100</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="co">#Print the percentage</span></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>pct_top</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 5.490134</code></pre>
+</div>
+</div>
+<p>From the workflow above, we can see that 5.49% of the census block groups have less that 5% of the population considered low income.</p>
+<p>Using a similar workflow, we can find the percent of census block groups that are above the 80th percentile for Particulate Matter 2.5 AND above the 80th percentile for Superfund proximity</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Create a dataframe of the census block groups that are above the 80th percentile for Particulate Matter 2.5 AND above the 80th percentile for Superfund proximity</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>pctl_80 <span class="ot">&lt;-</span> cropped_LA <span class="sc">%&gt;%</span> </span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(P_PM25 <span class="sc">&gt;</span> <span class="dv">80</span> <span class="sc">&amp;</span> P_PNPL <span class="sc">&gt;</span> <span class="dv">80</span>)</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="co">#Calculate the percentage</span></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>pct_above_80 <span class="ot">&lt;-</span> (<span class="fu">nrow</span>(pctl_80)<span class="sc">/</span><span class="fu">nrow</span>(cropped_LA))<span class="sc">*</span><span class="dv">100</span></span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a><span class="co">#print the percentage</span></span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>pct_above_80</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 17.87078</code></pre>
+</div>
+</div>
+<p>From the workflow above, we can see that 17.87% of census block groups are above the 80th percentile for both PM 2.5 and Superfund proximity.</p>
+</section>
+<section id="analyzing-historical-redlining-in-los-angeles-and-its-legacy-on-present-day-environmental-justice" class="level3">
+<h3 class="anchored" data-anchor-id="analyzing-historical-redlining-in-los-angeles-and-its-legacy-on-present-day-environmental-justice">2. Analyzing historical redlining in Los Angeles and its legacy on present-day environmental justice</h3>
+<p>Start by importing the redlining information for Los Angeles.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Read in the data</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>LA_redlining <span class="ot">&lt;-</span> <span class="fu">st_read</span>(<span class="st">"data/mapping-inequality/mapping-inequality-los-angeles.json"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">st_make_valid</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Reading layer `mapping-inequality-los-angeles' from data source 
+  `/Users/heatherchilders/Documents/MEDS/Personal Website/hmchilders.github.io/Geospatial_Blogs/2023-11-10/data/mapping-inequality/mapping-inequality-los-angeles.json' 
+  using driver `GeoJSON'
+Simple feature collection with 417 features and 14 fields
+Geometry type: MULTIPOLYGON
+Dimension:     XY
+Bounding box:  xmin: -118.6104 ymin: 33.70563 xmax: -117.7028 ymax: 34.30388
+Geodetic CRS:  WGS 84</code></pre>
+</div>
+</div>
+<p>Now let visualize the relining information by making a map of historical redlining boundaries, colored by HOLC grade</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tm_shape</span>(LA_redlining)<span class="sc">+</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">tm_basemap</span>()<span class="sc">+</span></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tm_graticules</span>()<span class="sc">+</span></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>    <span class="fu">tm_scale_bar</span>()<span class="sc">+</span></span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tm_polygons</span>(<span class="st">'grade'</span>,</span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>          <span class="at">palette =</span> <span class="fu">c</span>(<span class="st">"chartreuse"</span>, <span class="st">"darkturquoise"</span>, <span class="st">"gold1"</span>, <span class="st">"firebrick2"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-7-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p><strong>Let’s quickly compare the redlinging data to the LA County data we looked at before by finding the number of census block groups that fall within areas with HOLC grades hint: make sure the CRS match</strong></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Check the crs matching using the commented out code as shown below:</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="co">#st_scr(data 1) == st_crs(data 2)</span></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a><span class="co">#Make the datasets have the same coordinate refernce system</span></span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>LA_transform <span class="ot">&lt;-</span> <span class="fu">st_transform</span>(LA_redlining, <span class="at">crs =</span> <span class="dv">3857</span>)</span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a><span class="co">#Join the two maps by figuring out which census blocks from the redlining data intersect with the LA County data</span></span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a>joined_mapping <span class="ot">&lt;-</span> <span class="fu">st_intersection</span>(LA_transform, cropped_LA)</span>
+<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a><span class="co">#Count and print the number of intersecting census blocks; we added unique to the are id to ensure census blocks weren't counted more than once</span></span>
+<span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a><span class="fu">length</span>(<span class="fu">unique</span>(joined_mapping<span class="sc">$</span>ID))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>The number of census block groups that fall within HOLC grade areas is 3818.</p>
+<p>Additionally, we can summarize current conditions based on EJScreen data within historical redlining categories using the mean of the following variables:<br>
+-% low income.<br>
+- percentile for particulate Matter 2.5.<br>
+- percentile for low life expectancy.<br>
+- percentile for air toxics cancer risk</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Make the datasets have the same coordinate refernce system</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>LA_transform <span class="ot">&lt;-</span> <span class="fu">st_transform</span>(LA_redlining, <span class="at">crs =</span> <span class="dv">3857</span>)</span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="co">#Join the two maps by figuring out which census blocks from the redlining data intersect with the LA County data</span></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>joined_mapping <span class="ot">&lt;-</span> <span class="fu">st_intersection</span>(LA_transform, cropped_LA)</span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a><span class="co">#Create a table of summary statistics</span></span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a>Summ_stats <span class="ot">&lt;-</span> joined_mapping <span class="sc">%&gt;%</span></span>
+<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">st_drop_geometry</span>() <span class="sc">%&gt;%</span> <span class="co">#Remove the geospatial component since we just want a table, not a map</span></span>
+<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(grade) <span class="sc">%&gt;%</span> <span class="co">#Group the data by holc grade so we can see stats by grade</span></span>
+<span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(<span class="at">avg_pct_LowIncome =</span> <span class="fu">mean</span>(LOWINCPCT, <span class="at">na.rm =</span> <span class="cn">TRUE</span>), <span class="co">#Calculate the mean low income%</span></span>
+<span id="cb13-11"><a href="#cb13-11" aria-hidden="true" tabindex="-1"></a>            <span class="at">avg_pctl_PM25 =</span> <span class="fu">mean</span>(P_PM25, <span class="at">na.rm =</span> <span class="cn">TRUE</span>), <span class="co">#Calculate the mean PM2.5 percentile</span></span>
+<span id="cb13-12"><a href="#cb13-12" aria-hidden="true" tabindex="-1"></a>            <span class="at">avg_pctl_LifeExpt =</span> <span class="fu">mean</span>(P_LIFEEXPPCT, <span class="at">na.rm =</span> <span class="cn">TRUE</span>), <span class="co">#Calculate the low life expect. percentile</span></span>
+<span id="cb13-13"><a href="#cb13-13" aria-hidden="true" tabindex="-1"></a>            <span class="at">avg_pctl_Cancer =</span> <span class="fu">mean</span>(P_CANCER, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)) <span class="sc">%&gt;%</span> <span class="co">#Calculate the cancer risk percentile</span></span>
+<span id="cb13-14"><a href="#cb13-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">gt</span>() <span class="co">#Create a nice table using gt</span></span>
+<span id="cb13-15"><a href="#cb13-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-16"><a href="#cb13-16" aria-hidden="true" tabindex="-1"></a><span class="co">#Print the table</span></span>
+<span id="cb13-17"><a href="#cb13-17" aria-hidden="true" tabindex="-1"></a>Summ_stats</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+
+<div id="oqbhkuwbsi" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<style>#oqbhkuwbsi table {
+  font-family: system-ui, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#oqbhkuwbsi thead, #oqbhkuwbsi tbody, #oqbhkuwbsi tfoot, #oqbhkuwbsi tr, #oqbhkuwbsi td, #oqbhkuwbsi th {
+  border-style: none;
+}
+
+#oqbhkuwbsi p {
+  margin: 0;
+  padding: 0;
+}
+
+#oqbhkuwbsi .gt_table {
+  display: table;
+  border-collapse: collapse;
+  line-height: normal;
+  margin-left: auto;
+  margin-right: auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+  width: auto;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #A8A8A8;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #A8A8A8;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+}
+
+#oqbhkuwbsi .gt_caption {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+#oqbhkuwbsi .gt_title {
+  color: #333333;
+  font-size: 125%;
+  font-weight: initial;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-color: #FFFFFF;
+  border-bottom-width: 0;
+}
+
+#oqbhkuwbsi .gt_subtitle {
+  color: #333333;
+  font-size: 85%;
+  font-weight: initial;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-color: #FFFFFF;
+  border-top-width: 0;
+}
+
+#oqbhkuwbsi .gt_heading {
+  background-color: #FFFFFF;
+  text-align: center;
+  border-bottom-color: #FFFFFF;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#oqbhkuwbsi .gt_bottom_border {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#oqbhkuwbsi .gt_col_headings {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+}
+
+#oqbhkuwbsi .gt_col_heading {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 6px;
+  padding-left: 5px;
+  padding-right: 5px;
+  overflow-x: hidden;
+}
+
+#oqbhkuwbsi .gt_column_spanner_outer {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: normal;
+  text-transform: inherit;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#oqbhkuwbsi .gt_column_spanner_outer:first-child {
+  padding-left: 0;
+}
+
+#oqbhkuwbsi .gt_column_spanner_outer:last-child {
+  padding-right: 0;
+}
+
+#oqbhkuwbsi .gt_column_spanner {
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: bottom;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  overflow-x: hidden;
+  display: inline-block;
+  width: 100%;
+}
+
+#oqbhkuwbsi .gt_spanner_row {
+  border-bottom-style: hidden;
+}
+
+#oqbhkuwbsi .gt_group_heading {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  text-align: left;
+}
+
+#oqbhkuwbsi .gt_empty_group_heading {
+  padding: 0.5px;
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  vertical-align: middle;
+}
+
+#oqbhkuwbsi .gt_from_md > :first-child {
+  margin-top: 0;
+}
+
+#oqbhkuwbsi .gt_from_md > :last-child {
+  margin-bottom: 0;
+}
+
+#oqbhkuwbsi .gt_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 10px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 1px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 1px;
+  border-right-color: #D3D3D3;
+  vertical-align: middle;
+  overflow-x: hidden;
+}
+
+#oqbhkuwbsi .gt_stub {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#oqbhkuwbsi .gt_stub_row_group {
+  color: #333333;
+  background-color: #FFFFFF;
+  font-size: 100%;
+  font-weight: initial;
+  text-transform: inherit;
+  border-right-style: solid;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+  padding-left: 5px;
+  padding-right: 5px;
+  vertical-align: top;
+}
+
+#oqbhkuwbsi .gt_row_group_first td {
+  border-top-width: 2px;
+}
+
+#oqbhkuwbsi .gt_row_group_first th {
+  border-top-width: 2px;
+}
+
+#oqbhkuwbsi .gt_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#oqbhkuwbsi .gt_first_summary_row {
+  border-top-style: solid;
+  border-top-color: #D3D3D3;
+}
+
+#oqbhkuwbsi .gt_first_summary_row.thick {
+  border-top-width: 2px;
+}
+
+#oqbhkuwbsi .gt_last_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#oqbhkuwbsi .gt_grand_summary_row {
+  color: #333333;
+  background-color: #FFFFFF;
+  text-transform: inherit;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#oqbhkuwbsi .gt_first_grand_summary_row {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-top-style: double;
+  border-top-width: 6px;
+  border-top-color: #D3D3D3;
+}
+
+#oqbhkuwbsi .gt_last_grand_summary_row_top {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom-style: double;
+  border-bottom-width: 6px;
+  border-bottom-color: #D3D3D3;
+}
+
+#oqbhkuwbsi .gt_striped {
+  background-color: rgba(128, 128, 128, 0.05);
+}
+
+#oqbhkuwbsi .gt_table_body {
+  border-top-style: solid;
+  border-top-width: 2px;
+  border-top-color: #D3D3D3;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+}
+
+#oqbhkuwbsi .gt_footnotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#oqbhkuwbsi .gt_footnote {
+  margin: 0px;
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#oqbhkuwbsi .gt_sourcenotes {
+  color: #333333;
+  background-color: #FFFFFF;
+  border-bottom-style: none;
+  border-bottom-width: 2px;
+  border-bottom-color: #D3D3D3;
+  border-left-style: none;
+  border-left-width: 2px;
+  border-left-color: #D3D3D3;
+  border-right-style: none;
+  border-right-width: 2px;
+  border-right-color: #D3D3D3;
+}
+
+#oqbhkuwbsi .gt_sourcenote {
+  font-size: 90%;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+#oqbhkuwbsi .gt_left {
+  text-align: left;
+}
+
+#oqbhkuwbsi .gt_center {
+  text-align: center;
+}
+
+#oqbhkuwbsi .gt_right {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+#oqbhkuwbsi .gt_font_normal {
+  font-weight: normal;
+}
+
+#oqbhkuwbsi .gt_font_bold {
+  font-weight: bold;
+}
+
+#oqbhkuwbsi .gt_font_italic {
+  font-style: italic;
+}
+
+#oqbhkuwbsi .gt_super {
+  font-size: 65%;
+}
+
+#oqbhkuwbsi .gt_footnote_marks {
+  font-size: 75%;
+  vertical-align: 0.4em;
+  position: initial;
+}
+
+#oqbhkuwbsi .gt_asterisk {
+  font-size: 100%;
+  vertical-align: 0;
+}
+
+#oqbhkuwbsi .gt_indent_1 {
+  text-indent: 5px;
+}
+
+#oqbhkuwbsi .gt_indent_2 {
+  text-indent: 10px;
+}
+
+#oqbhkuwbsi .gt_indent_3 {
+  text-indent: 15px;
+}
+
+#oqbhkuwbsi .gt_indent_4 {
+  text-indent: 20px;
+}
+
+#oqbhkuwbsi .gt_indent_5 {
+  text-indent: 25px;
+}
+
+#oqbhkuwbsi .katex-display {
+  display: inline-flex !important;
+  margin-bottom: 0.75em !important;
+}
+
+#oqbhkuwbsi div.Reactable > div.rt-table > div.rt-thead > div.rt-tr.rt-tr-group-header > div.rt-th-group:after {
+  height: 0px !important;
+}
+</style>
+<table class="gt_table" data-quarto-disable-processing="false" data-quarto-bootstrap="false">
+  <thead>
+    <tr class="gt_col_headings">
+      <th class="gt_col_heading gt_columns_bottom_border gt_left" rowspan="1" colspan="1" scope="col" id="grade">grade</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="avg_pct_LowIncome">avg_pct_LowIncome</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="avg_pctl_PM25">avg_pctl_PM25</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="avg_pctl_LifeExpt">avg_pctl_LifeExpt</th>
+      <th class="gt_col_heading gt_columns_bottom_border gt_right" rowspan="1" colspan="1" scope="col" id="avg_pctl_Cancer">avg_pctl_Cancer</th>
+    </tr>
+  </thead>
+  <tbody class="gt_table_body">
+    <tr><td headers="grade" class="gt_row gt_left">A</td>
+<td headers="avg_pct_LowIncome" class="gt_row gt_right">0.1506682</td>
+<td headers="avg_pctl_PM25" class="gt_row gt_right">72.22917</td>
+<td headers="avg_pctl_LifeExpt" class="gt_row gt_right">23.71991</td>
+<td headers="avg_pctl_Cancer" class="gt_row gt_right">44.08102</td></tr>
+    <tr><td headers="grade" class="gt_row gt_left">B</td>
+<td headers="avg_pct_LowIncome" class="gt_row gt_right">0.2412924</td>
+<td headers="avg_pctl_PM25" class="gt_row gt_right">76.33249</td>
+<td headers="avg_pctl_LifeExpt" class="gt_row gt_right">37.42025</td>
+<td headers="avg_pctl_Cancer" class="gt_row gt_right">47.97384</td></tr>
+    <tr><td headers="grade" class="gt_row gt_left">C</td>
+<td headers="avg_pct_LowIncome" class="gt_row gt_right">0.3362853</td>
+<td headers="avg_pctl_PM25" class="gt_row gt_right">78.83678</td>
+<td headers="avg_pctl_LifeExpt" class="gt_row gt_right">47.88017</td>
+<td headers="avg_pctl_Cancer" class="gt_row gt_right">54.63602</td></tr>
+    <tr><td headers="grade" class="gt_row gt_left">D</td>
+<td headers="avg_pct_LowIncome" class="gt_row gt_right">0.3902902</td>
+<td headers="avg_pctl_PM25" class="gt_row gt_right">80.25829</td>
+<td headers="avg_pctl_LifeExpt" class="gt_row gt_right">53.03624</td>
+<td headers="avg_pctl_Cancer" class="gt_row gt_right">56.43022</td></tr>
+    <tr><td headers="grade" class="gt_row gt_left">NA</td>
+<td headers="avg_pct_LowIncome" class="gt_row gt_right">0.3542969</td>
+<td headers="avg_pctl_PM25" class="gt_row gt_right">76.29197</td>
+<td headers="avg_pctl_LifeExpt" class="gt_row gt_right">50.12409</td>
+<td headers="avg_pctl_Cancer" class="gt_row gt_right">41.45255</td></tr>
+  </tbody>
+  
+  
+</table>
+</div>
+</div>
+</div>
+<p>Breaking the percentiles down into each HOLC grade shows some troubling statistics about the quality of life differences between grades. For the percent of the population considered low income, the percent in HOLC grade A communities is only 15%. For D grade communities in the same category, the percentage jumps to almost 40%. This trend is true for all of the categories explored in this table including the average percentile for PM2.5 concentration, the average percentile for low life expectancy, and average percentile for cancer risk. Average PM2.5 concentration and average percentile for cancer risk have the smallest differences between A and D groups. This data implies that policy decisions are affecting the “safety ratings” for the HOLC grades, and disadvantaged groups are being targeted.</p>
+</section>
+<section id="investigate-the-legacy-of-redlining-in-biodiversity-observations" class="level3">
+<h3 class="anchored" data-anchor-id="investigate-the-legacy-of-redlining-in-biodiversity-observations">Investigate the legacy of redlining in biodiversity observations</h3>
+<p>For bird observations from 2022 that fall within neighborhoods with HOLC grades, we can find the percent of observations within each redlining categories and plot results. Remember to always make sure that the bird observations have the same CRS as redlining data.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Read in the data</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>bird_data <span class="ot">&lt;-</span> <span class="fu">st_read</span>(<span class="st">"data/gbif-birds-LA/"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Reading layer `gbif-birds-LA' from data source 
+  `/Users/heatherchilders/Documents/MEDS/Personal Website/hmchilders.github.io/Geospatial_Blogs/2023-11-10/data/gbif-birds-LA' 
+  using driver `ESRI Shapefile'
+Simple feature collection with 1288865 features and 1 field
+Geometry type: POINT
+Dimension:     XY
+Bounding box:  xmin: -118.6099 ymin: 33.70563 xmax: -117.7028 ymax: 34.30385
+Geodetic CRS:  WGS 84</code></pre>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Filter just to the observations for 2022</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>birds <span class="ot">&lt;-</span> bird_data <span class="sc">%&gt;%</span> </span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(year <span class="sc">==</span> <span class="st">"2022"</span>)</span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a><span class="co">#Make sure the CRS match</span></span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a><span class="fu">st_crs</span>(birds) <span class="sc">==</span> <span class="fu">st_crs</span>(LA_redlining)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] TRUE</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Join the data</span></span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>joined_birds <span class="ot">&lt;-</span> <span class="fu">st_join</span>(LA_redlining,birds)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Calculate the percentage of observations from each HOLC Grade</span></span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>grade_pct <span class="ot">&lt;-</span> joined_birds <span class="sc">%&gt;%</span> </span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(grade) <span class="sc">%&gt;%</span> </span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(<span class="at">obsv_pct =</span> ((<span class="fu">n</span>()<span class="sc">/</span><span class="fu">nrow</span>(joined_birds))<span class="sc">*</span><span class="dv">100</span>))</span>
+<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a><span class="co">#Plot the data</span></span>
+<span id="cb19-7"><a href="#cb19-7" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(grade_pct, <span class="fu">aes</span>(<span class="at">x =</span> grade, <span class="at">y =</span> obsv_pct))<span class="sc">+</span></span>
+<span id="cb19-8"><a href="#cb19-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_col</span>(<span class="at">fill =</span> <span class="fu">c</span>(<span class="st">"chartreuse"</span>, <span class="st">"darkturquoise"</span>, <span class="st">"gold1"</span>, <span class="st">"firebrick2"</span>,<span class="st">"grey"</span>))<span class="sc">+</span></span>
+<span id="cb19-9"><a href="#cb19-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"HOLC Grades"</span>,</span>
+<span id="cb19-10"><a href="#cb19-10" aria-hidden="true" tabindex="-1"></a>       <span class="at">y =</span> <span class="st">"Precent of observation"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-12-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<p>These results are not what I would’ve initially expected. I would’ve expected the majority of the observations to be in A and B grades because the areas are better protected which would encourage bird populations, and the people living in these areas are more affluent and are more likely to spend time bird watching. One reason there might be a higher percentage of sightings in the C and D grade communities is because people living in these areas are more likely to care about the quality of their environment because they are experiencing the effects of increased PM and exposure to toxins.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="co">#additional graph</span></span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>id_pct <span class="ot">&lt;-</span>joined_birds <span class="sc">%&gt;%</span> </span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(grade) <span class="sc">%&gt;%</span> </span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarize</span>(<span class="at">obs_pct =</span> ((<span class="fu">n</span>()<span class="sc">/</span><span class="fu">nrow</span>(joined_birds))<span class="sc">*</span><span class="dv">100</span>))</span>
+<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-6"><a href="#cb20-6" aria-hidden="true" tabindex="-1"></a><span class="fu">tm_shape</span>(LA_redlining)<span class="sc">+</span></span>
+<span id="cb20-7"><a href="#cb20-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tm_fill</span>(<span class="st">'grade'</span>, </span>
+<span id="cb20-8"><a href="#cb20-8" aria-hidden="true" tabindex="-1"></a>          <span class="at">palette =</span> <span class="fu">c</span>(<span class="st">"chartreuse"</span>, <span class="st">"darkturquoise"</span>, <span class="st">"gold1"</span>, <span class="st">"firebrick2"</span>, <span class="st">"grey"</span> ))<span class="sc">+</span></span>
+<span id="cb20-9"><a href="#cb20-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tm_shape</span>(id_pct)<span class="sc">+</span></span>
+<span id="cb20-10"><a href="#cb20-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">tm_symbols</span>(<span class="st">'obs_pct'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-13-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+
+
+</section>
+</section>
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents"><h2 class="anchored quarto-appendix-heading">Citation</h2><div><div class="quarto-appendix-secondary-label">BibTeX citation:</div><pre class="sourceCode code-with-copy quarto-appendix-bibtex"><code class="sourceCode bibtex">@online{childers2023,
+  author = {Childers, Heather},
+  title = {Investigate the {Legacy} of {Redlining} in {Current}
+    {Environmental} {(In)justice}},
+  date = {2023-12-10},
+  url = {hmchilders.github.io/Geospatial_Blogs/2023-11-10},
+  langid = {en}
+}
+</code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre><div class="quarto-appendix-secondary-label">For attribution, please cite this work as:</div><div id="ref-childers2023" class="csl-entry quarto-appendix-citeas" role="listitem">
+Childers, Heather. 2023. <span>“Investigate the Legacy of Redlining in
+Current Environmental (In)justice.”</span> December 10, 2023. <a href="https://hmchilders.github.io/Geospatial_Blogs/2023-11-10">hmchilders.github.io/Geospatial_Blogs/2023-11-10</a>.
+</div></div></section></div></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">Heather Childers</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/hmchilders">
+      <i class="bi bi-github" role="img">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+</body></html>

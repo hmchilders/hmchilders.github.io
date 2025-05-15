@@ -9,7 +9,7 @@ author:
     affiliation-url: https://bren.ucsb.edu/masters-programs/master-environmental-data-science
     #orcid: 
 date: 12-10-2023
-categories: [MEDS, R, Geospatial]
+categories: [MEDS, R, Geospatial, Environmental Justice]
 image: Graph.png
 citation: 
   url: hmchilders.github.io/Geospatial_Blogs/2023-12-15
