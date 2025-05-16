@@ -61,6 +61,10 @@ body {
   color: $text_color;
 }
 
+.navbar {
+  font-size: 1.45rem;
+}
+
 .title{
   color: $text_color;
 }
@@ -70,6 +74,10 @@ body {
 }
 
 .navbar-brand img { 
-  max-height: 95px;
+  max-height: 120px;
   width: auto;
+}
+
+.nav-icon-large i {
+  font-size: 2.25rem;
 }

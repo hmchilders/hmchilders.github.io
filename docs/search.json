@@ -102,7 +102,14 @@
     "href": "index.html",
     "title": "Welcome in!",
     "section": "",
-    "text": "I’m Heather, and I’m thrilled to share snippets of my life with you here. Showcasing my education in Engineering and Data Science alongside my extracurricular pursuits and passion projects under a single label, or one-page resume, can be challenging. My hope is that this website will provide a holistic view of who I am and serve as a time capsule of my accomplishments in early adulthood. Take a look around and reach out if any of my projects interest you!"
+    "text": "I’m Heather, and I’m thrilled to share snippets of my life with you here. Through my professional and educational journey, I will be updating this website to include my past projects and new accomplishments. Take a look around and reach out if any of my projects interest you!"
+  },
+  {
+    "objectID": "index.html#education",
+    "href": "index.html#education",
+    "title": "Welcome in!",
+    "section": "Education",
+    "text": "Education\n Master of Science in Atmospheric Science (Expected 2026)  University of California, Davis\n Master of Environmental Data Science (2024)  Bren School of Environmental Science & Management  Santa Barbara, CA\n Bachelor of Science in Biological Systems Engineering, Minor in Atmospheric Science (2022)  University of California, Davis"
   },
   {
     "objectID": "blog_posts/2023-11-06_practice_blog_post/index.html",

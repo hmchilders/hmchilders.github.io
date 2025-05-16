@@ -18,15 +18,15 @@ website:
         text: Projects
       - href: xtra.qmd
         text: Leadership
+      - href: cv/Childers_CV.pdf
+        text: CV
 #      - href: PasProj.qmd
 #        text: Passions
 
         
     right:
-      - href: cv/Childers_CV.pdf
-        text: CV
       - href: https://github.com/hmchilders
-        icon: github
+        text: "<i class='bi bi-github' style='font-size: 3rem;'></i>"
   page-footer: 
     background: light
     left: "Heather Childers"

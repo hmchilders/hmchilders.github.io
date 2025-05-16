@@ -3,8 +3,8 @@ title: "Welcome in!"
 image: images/profile.jpg
 toc: false
 about: 
-  template: jolla
-  image-width: 25em
+  template: trestles
+  image-width: 15em
   image-shape: round
   links: 
     - text: LinkedIn
@@ -17,4 +17,11 @@ about:
       href: mailto::hmchilders@bren.ucsb.edu
 ---
 
-I'm Heather, and I'm thrilled to share snippets of my life with you here. Showcasing my education in Engineering and Data Science alongside my extracurricular pursuits and passion projects under a single label, or one-page resume, can be challenging. My hope is that this website will provide a holistic view of who I am and serve as a time capsule of my accomplishments in early adulthood. Take a look around and reach out if any of my projects interest you!
+I'm Heather, and I'm thrilled to share snippets of my life with you here. Through my professional and educational journey, I will be updating this website to include my past projects and new accomplishments. Take a look around and reach out if any of my projects interest you!
+
+## Education
+<span style="display:inline-block; width: 1.5em; text-align:center;">{{< fa cloud title="Atmosphere" >}}</span>&ensp;**Master of Science in Atmospheric Science** (Expected 2026) <br> University of California, Davis 
+
+<span style="display:inline-block; width: 1.5em; text-align:center;">{{< fa earth-oceania title="Earth" >}}</span>&ensp;**Master of Environmental Data Science** (2024) <br> Bren School of Environmental Science & Management <br> Santa Barbara, CA
+
+<span style="display:inline-block; width: 1.5em; text-align:center;">{{< fa gears title="Engineering" >}}</span>&ensp;**Bachelor of Science in Biological Systems Engineering, Minor in Atmospheric Science** (2022) <br> University of California, Davis 
