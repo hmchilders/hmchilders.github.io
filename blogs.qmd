@@ -6,6 +6,9 @@ listing:
   - id: Geospatial
     contents: "Geospatial_Blogs/"
     type: grid
+  - id: PEDS
+    contents: "PEDS_Blogs/"
+    type: grid
 ---
 
 ### Recent Certifications
@@ -43,10 +46,13 @@ The goal of this course was to introduce spatial modeling and analytic technique
 ::: {#Geospatial}
 :::
 
+#### Python for Environmental Data Science
+
+::: {#PEDS}
+:::
+
 #### Data Visualization
 
 #### Machine Learning
-
-#### Python for Environmental Data Science
 
 #### Environmental Policy Analysis for Data Science

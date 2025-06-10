@@ -90,6 +90,34 @@ ul.task-list li input[type="checkbox"] {
       window['quarto-listing-loaded']();
     }
   })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-PEDS .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-PEDS'] = new List('listing-PEDS', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
   </script>
 
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
@@ -302,14 +330,41 @@ No matching items
 </div>
 </section>
 </section>
+<section id="python-for-environmental-data-science" class="level4">
+<h4 class="anchored" data-anchor-id="python-for-environmental-data-science">Python for Environmental Data Science</h4>
+<div id="listing-PEDS" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1701895655470" data-listing-reading-time-sort="3">
+<a href="./PEDS_Blogs/2023-12-06/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img src="https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=naip&item=ca_m_3411935_sw_11_060_20200521&assets=image&asset_bidx=image|1%2C2%2C3&format=png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Using the Microsoft Planetary Computer
+</h5>
+<div class="card-text listing-description">
+We use the Client function from the pystac_client package to access the catalog:
+</div>
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
+
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+</div>
+<div class="listing-no-matching d-none">
+No matching items
+</div>
+</div>
+</section>
 <section id="data-visualization" class="level4">
 <h4 class="anchored" data-anchor-id="data-visualization">Data Visualization</h4>
 </section>
 <section id="machine-learning" class="level4">
 <h4 class="anchored" data-anchor-id="machine-learning">Machine Learning</h4>
-</section>
-<section id="python-for-environmental-data-science" class="level4">
-<h4 class="anchored" data-anchor-id="python-for-environmental-data-science">Python for Environmental Data Science</h4>
 </section>
 <section id="environmental-policy-analysis-for-data-science" class="level4">
 <h4 class="anchored" data-anchor-id="environmental-policy-analysis-for-data-science">Environmental Policy Analysis for Data Science</h4>
