@@ -90,34 +90,6 @@ ul.task-list li input[type="checkbox"] {
       window['quarto-listing-loaded']();
     }
   })
-  
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-PEDS .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-PEDS'] = new List('listing-PEDS', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
   </script>
 
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
@@ -202,8 +174,10 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#recent-certifications" id="toc-recent-certifications" class="nav-link active" data-scroll-target="#recent-certifications">Recent Certifications</a></li>
+  <li><a href="#recent-projects" id="toc-recent-projects" class="nav-link" data-scroll-target="#recent-projects">Recent Projects:</a>
+  <ul class="collapse">
   <li><a href="#capstone-projects" id="toc-capstone-projects" class="nav-link" data-scroll-target="#capstone-projects">Capstone Projects</a></li>
-  <li><a href="#relevant-coursework" id="toc-relevant-coursework" class="nav-link" data-scroll-target="#relevant-coursework">Relevant Coursework</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -223,39 +197,66 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 </section>
 </section>
-<section id="capstone-projects" class="level3">
-<h3 class="anchored" data-anchor-id="capstone-projects">Capstone Projects</h3>
-<section id="understanding-the-influence-of-parameter-value-uncertainty-on-climate-model-outputs" class="level4">
-<h4 class="anchored" data-anchor-id="understanding-the-influence-of-parameter-value-uncertainty-on-climate-model-outputs">Understanding the Influence of Parameter Value Uncertainty on Climate Model Outputs</h4>
-<p>Climate models are computer simulations that attempt to replicate the complex interactions between Earth’s systems. Improving the accuracy of climate models relies on evaluating uncertainty and minimizing error. The Climate and Global Dynamics Lab at the National Center for Atmospheric Research (NCAR) has recently carried out a Parameter Perturbation Experiment (PPE) to understand how the uncertainty of parameter values affected the output of their model, the Community Land Model (CLM); which simulates terrestrial processes. While the necessary data for the PPE has been collected, the data is stored in a collection of files that are difficult to interpret in their current form. The current website hosts visualizations for a portion of the PPE data, but contains no visualizations for data that more closely simulates Earth system interactions. These issues can be mitigated by developing an emulator with the internal complexity to isolate a one-to-one relationship between a parameter and climate variable, then display the predicted relationship. A publicly available emulator with these capabilities will allow scientists to easily interpret complex climate model outputs and offer insights on parameter-variable relationships that are not being predicted accurately by the model; which can lead to increased accuracy and precision of climate models.</p>
-</section>
-<section id="development-of-a-solid-state-fermentation-reactor-for-high-value-protein-enriched-feed-from-almond-hulls" class="level4">
-<h4 class="anchored" data-anchor-id="development-of-a-solid-state-fermentation-reactor-for-high-value-protein-enriched-feed-from-almond-hulls">Development of a Solid State Fermentation Reactor for High-Value Protein-Enriched Feed from Almond Hulls</h4>
-<p>Each year 4.5 billion pounds of almond hulls are produced in California as a byproduct of the almond industry. Currently almond hulls are being used as feed for the dairy industry, but there is a need to find alternative markets. From previous research, it was discovered that the protein content of almond hulls could be increased from 4-6% up to 15% for use as poultry feed through solid state fermentation. The goal of this project is to scale up the fermentation process and design a bioreactor for fermenting almond hulls using M. Thermophila under controlled conditions. The bioreactor holds roughly 100 grams of almond hull substrate per batch and is kept at 50°C with a relative humidity of 70-90%. After 96 hours of fermentation and post processing, a feed product with an enriched protein content of up to 15% is produced.</p>
-</section>
-</section>
-<section id="relevant-coursework" class="level3">
-<h3 class="anchored" data-anchor-id="relevant-coursework">Relevant Coursework</h3>
-<p>Check out some of the projects I’ve completed using R, Python, and SQL as part of my Master of Environmental Data Science</p>
-<section id="geospatial-analysis-remote-sensing" class="level4">
-<h4 class="anchored" data-anchor-id="geospatial-analysis-remote-sensing">Geospatial Analysis &amp; Remote Sensing</h4>
-<p>The goal of this course was to introduce spatial modeling and analytic techniques of geographic information science to the Master of Environmental Data Science students. This course focused on creating open-source, reproducible workflows for geospatial problem solving in environmental sciences as well as working with different types of remotely sensed data. With an added focus on incorporating environmental justice into our project scope, we routinely worked with U.S. Census tract data to practice considering the human element behind data. Some of the key topics for this course included:</p>
-<ul>
-<li><p>Understanding Geospatial Datatypes: Vector vs Raster Data Manipulation</p></li>
-<li><p>How we collect remotely sensed data: Active vs Passive Remote Sensing</p></li>
-</ul>
-<section id="check-out-my-work" class="level6">
-<h6 class="anchored">Check out my work:</h6>
+<section id="recent-projects" class="level2">
+<h2 class="anchored" data-anchor-id="recent-projects">Recent Projects:</h2>
 <div id="listing-Geospatial" class="quarto-listing quarto-listing-container-grid">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="MEDS,R,Geospatial,Environmental Justice" data-listing-date-sort="1702195200000" data-listing-file-modified-sort="1746481405786" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10">
-<a href="./Geospatial_Blogs/2023-12-15/index.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="0" data-categories="MEDS,R" data-listing-date-sort="1710572400000" data-listing-file-modified-sort="1710731415339" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="54">
+<a href="./blog_posts/2024-3-16/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img src="blog_posts/2024-3-16/DataViz Final Infographic.jpg" alt="This image shows an inforgraphic of 21st century energy transformations and trends. The graphs shows in the infographic are described in the document below, along with the code on how to create each graph. The takeaway message of the infographic is that energy usage has plateaued in the 21st century due to technological advances that have reduced the energy intensity of processes that use energy at the national-sector level." style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+21st Century Energy Evolution: Trends &amp; Transformations
+</h5>
+<div class="card-text listing-description">
+Data Viz Final Project
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Heather Childers
+</div>
+<div class="listing-date">
+Mar 16, 2024
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="MEDS" data-listing-date-sort="1702195200000" data-listing-file-modified-sort="1703116333953" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="9">
+<a href="./blog_posts/2023-11-06_practice_blog_post/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img src="./Geospatial_Blogs/2023-12-15/Graph.png" class="thumbnail-image card-img" style="height: 150px;">
+<img src="./blog_posts/2023-11-06_practice_blog_post/PovIndex.png" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title" data-anchor-id="check-out-my-work">
+<h5 class="no-anchor card-title listing-title">
+A Comparison of Common Indices Used to Measure Poverty and Inequality
+</h5>
+<div class="card-text listing-description">
+The goal of this paper is to summarize some of the most commonly used indices for measuring poverty and inequalities for a non-technical audience while providing an accurate…
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Heather Childers
+</div>
+<div class="listing-date">
+Dec 10, 2023
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="2" data-categories="MEDS,R,Geospatial,Environmental Justice" data-listing-date-sort="1702195200000" data-listing-file-modified-sort="1758139163348" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="10">
+<a href="./blog_posts/CopyOf2023-12-15/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img src="./blog_posts/CopyOf2023-12-15/Graph.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
 Exploring the Socioeconomic Impacts of the 2021 Blackout in Houston, Texas
 </h5>
 <div class="card-text listing-description">
@@ -273,11 +274,54 @@ Dec 10, 2023
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="MEDS,R,Geospatial,Environmental Justice" data-listing-date-sort="1702195200000" data-listing-file-modified-sort="1747349861165" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="9">
-<a href="./Geospatial_Blogs/2023-11-10/index.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="3" data-categories="MEDS,R" data-listing-date-sort="1702627200000" data-listing-file-modified-sort="1702683366756" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="8">
+<a href="./blog_posts/2023-12-14/Stats.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img src="blog_posts/2023-12-14/lulc2021.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Impact of Land Use Change on Water Storage in the Yolo County Area
+</h5>
+<div class="card-text listing-description">
+Statistics Final Report
+</div>
+<div class="card-attribution card-text-small justify">
+<div class="listing-author">
+Heather Childers
+</div>
+<div class="listing-date">
+Dec 15, 2023
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="4" data-listing-file-modified-sort="1702536183391" data-listing-reading-time-sort="6">
+<a href="./blog_posts/2023-12-13/Blog_post_version.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img src="blog_posts/2023-12-13/Blog_post_version_files/figure-html/f6fe1edd-7717-40ce-b5db-00d6b0c74901-1-AQIplot.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Impact of the Thomas Fire on Santa Barbara County Air Quality and Land Cover Change
+</h5>
+<div class="card-text listing-description">
+Author: Heather Childers
+</div>
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
+
+</div>
+</div>
+</div>
+</div>
+</a>
+</div>
+<div class="g-col-1" data-index="5" data-categories="MEDS,R,Geospatial,Environmental Justice" data-listing-date-sort="1702195200000" data-listing-file-modified-sort="1758139159816" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="9">
+<a href="./blog_posts/CopyOf2023-11-10/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img src="./Geospatial_Blogs/2023-11-10/Graph.png" class="thumbnail-image card-img" style="height: 150px;">
+<img src="./blog_posts/CopyOf2023-11-10/Graph.png" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -298,11 +342,11 @@ Dec 10, 2023
 </div>
 </a>
 </div>
-<div class="g-col-1" data-index="2" data-categories="MEDS,R,Geospatial" data-listing-date-sort="1702108800000" data-listing-file-modified-sort="1746479591302" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="13">
-<a href="./Geospatial_Blogs/2023-12-9/index.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="6" data-categories="MEDS,R,Geospatial" data-listing-date-sort="1702108800000" data-listing-file-modified-sort="1758139161779" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="13">
+<a href="./blog_posts/CopyOf2023-12-9/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img src="./Geospatial_Blogs/2023-12-9/Graph.png" class="thumbnail-image card-img" style="height: 150px;">
+<img src="./blog_posts/CopyOf2023-12-9/Graph.png" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <h5 class="no-anchor card-title listing-title">
@@ -323,19 +367,8 @@ Dec 9, 2023
 </div>
 </a>
 </div>
-</div>
-<div class="listing-no-matching d-none">
-No matching items
-</div>
-</div>
-</section>
-</section>
-<section id="python-for-environmental-data-science" class="level4">
-<h4 class="anchored" data-anchor-id="python-for-environmental-data-science">Python for Environmental Data Science</h4>
-<div id="listing-PEDS" class="quarto-listing quarto-listing-container-grid">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1701895655470" data-listing-reading-time-sort="3">
-<a href="./PEDS_Blogs/2023-12-06/index.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="7" data-listing-file-modified-sort="1701895655470" data-listing-reading-time-sort="3">
+<a href="./blog_posts/2023-12-06/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top"><img src="https://planetarycomputer.microsoft.com/api/data/v1/item/preview.png?collection=naip&item=ca_m_3411935_sw_11_060_20200521&assets=image&asset_bidx=image|1%2C2%2C3&format=png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
 <div class="card-body post-contents">
@@ -359,18 +392,19 @@ We use the Client function from the pystac_client package to access the catalog:
 No matching items
 </div>
 </div>
+<section id="capstone-projects" class="level3">
+<h3 class="anchored" data-anchor-id="capstone-projects">Capstone Projects</h3>
+<section id="understanding-the-influence-of-parameter-value-uncertainty-on-climate-model-outputs" class="level4">
+<h4 class="anchored" data-anchor-id="understanding-the-influence-of-parameter-value-uncertainty-on-climate-model-outputs">Understanding the Influence of Parameter Value Uncertainty on Climate Model Outputs</h4>
+<p>Climate models are computer simulations that attempt to replicate the complex interactions between Earth’s systems. Improving the accuracy of climate models relies on evaluating uncertainty and minimizing error. The Climate and Global Dynamics Lab at the National Center for Atmospheric Research (NCAR) has recently carried out a Parameter Perturbation Experiment (PPE) to understand how the uncertainty of parameter values affected the output of their model, the Community Land Model (CLM); which simulates terrestrial processes. While the necessary data for the PPE has been collected, the data is stored in a collection of files that are difficult to interpret in their current form. The current website hosts visualizations for a portion of the PPE data, but contains no visualizations for data that more closely simulates Earth system interactions. These issues can be mitigated by developing an emulator with the internal complexity to isolate a one-to-one relationship between a parameter and climate variable, then display the predicted relationship. A publicly available emulator with these capabilities will allow scientists to easily interpret complex climate model outputs and offer insights on parameter-variable relationships that are not being predicted accurately by the model; which can lead to increased accuracy and precision of climate models.</p>
 </section>
-<section id="data-visualization" class="level4">
-<h4 class="anchored" data-anchor-id="data-visualization">Data Visualization</h4>
-</section>
-<section id="machine-learning" class="level4">
-<h4 class="anchored" data-anchor-id="machine-learning">Machine Learning</h4>
-</section>
-<section id="environmental-policy-analysis-for-data-science" class="level4">
-<h4 class="anchored" data-anchor-id="environmental-policy-analysis-for-data-science">Environmental Policy Analysis for Data Science</h4>
+<section id="development-of-a-solid-state-fermentation-reactor-for-high-value-protein-enriched-feed-from-almond-hulls" class="level4">
+<h4 class="anchored" data-anchor-id="development-of-a-solid-state-fermentation-reactor-for-high-value-protein-enriched-feed-from-almond-hulls">Development of a Solid State Fermentation Reactor for High-Value Protein-Enriched Feed from Almond Hulls</h4>
+<p>Each year 4.5 billion pounds of almond hulls are produced in California as a byproduct of the almond industry. Currently almond hulls are being used as feed for the dairy industry, but there is a need to find alternative markets. From previous research, it was discovered that the protein content of almond hulls could be increased from 4-6% up to 15% for use as poultry feed through solid state fermentation. The goal of this project is to scale up the fermentation process and design a bioreactor for fermenting almond hulls using M. Thermophila under controlled conditions. The bioreactor holds roughly 100 grams of almond hull substrate per batch and is kept at 50°C with a relative humidity of 70-90%. After 96 hours of fermentation and post processing, a feed product with an enriched protein content of up to 15% is produced.</p>
 
 
 
+</section>
 </section>
 </section>
 

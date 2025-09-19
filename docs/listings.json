@@ -2,10 +2,14 @@
   {
     "listing": "/blogs.html",
     "items": [
-      "/Geospatial_Blogs/2023-12-15/index.html",
-      "/Geospatial_Blogs/2023-11-10/index.html",
-      "/Geospatial_Blogs/2023-12-9/index.html",
-      "/PEDS_Blogs/2023-12-06/index.html"
+      "/blog_posts/2024-3-16/index.html",
+      "/blog_posts/2023-11-06_practice_blog_post/index.html",
+      "/blog_posts/CopyOf2023-12-15/index.html",
+      "/blog_posts/2023-12-14/Stats.html",
+      "/blog_posts/2023-12-13/Blog_post_version.html",
+      "/blog_posts/CopyOf2023-11-10/index.html",
+      "/blog_posts/CopyOf2023-12-9/index.html",
+      "/blog_posts/2023-12-06/index.html"
     ]
   }
 ]

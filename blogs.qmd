@@ -4,10 +4,7 @@ subtitle: "A peek into my relevant coursework, capstone projects, and my efforts
 title-block-banner: true
 listing: 
   - id: Geospatial
-    contents: "Geospatial_Blogs/"
-    type: grid
-  - id: PEDS
-    contents: "PEDS_Blogs/"
+    contents: "blog_posts/"
     type: grid
 ---
 
@@ -19,6 +16,14 @@ listing:
 
 -   Make an Impact with Modern Geo Apps [view certificate](certificates/GeoAppCert.pdf){target="_blank"}
 
+## Recent Projects:
+
+
+::: {#Geospatial}
+
+#### 
+:::
+
 ### Capstone Projects
 
 #### Understanding the Influence of Parameter Value Uncertainty on Climate Model Outputs
@@ -29,30 +34,3 @@ Climate models are computer simulations that attempt to replicate the complex in
 
 Each year 4.5 billion pounds of almond hulls are produced in California as a byproduct of the almond industry. Currently almond hulls are being used as feed for the dairy industry, but there is a need to find alternative markets. From previous research, it was discovered that the protein content of almond hulls could be increased from 4-6% up to 15% for use as poultry feed through solid state fermentation. The goal of this project is to scale up the fermentation process and design a bioreactor for fermenting almond hulls using M. Thermophila under controlled conditions. The bioreactor holds roughly 100 grams of almond hull substrate per batch and is kept at 50°C with a relative humidity of 70-90%. After 96 hours of fermentation and post processing, a feed product with an enriched protein content of up to 15% is produced.
 
-### Relevant Coursework
-
-Check out some of the projects I've completed using R, Python, and SQL as part of my Master of Environmental Data Science
-
-#### Geospatial Analysis & Remote Sensing
-
-The goal of this course was to introduce spatial modeling and analytic techniques of geographic information science to the Master of Environmental Data Science students. This course focused on creating open-source, reproducible workflows for geospatial problem solving in environmental sciences as well as working with different types of remotely sensed data. With an added focus on incorporating environmental justice into our project scope, we routinely worked with U.S. Census tract data to practice considering the human element behind data. Some of the key topics for this course included:
-
--   Understanding Geospatial Datatypes: Vector vs Raster Data Manipulation
-
--   How we collect remotely sensed data: Active vs Passive Remote Sensing
-
-###### Check out my work:
-
-::: {#Geospatial}
-:::
-
-#### Python for Environmental Data Science
-
-::: {#PEDS}
-:::
-
-#### Data Visualization
-
-#### Machine Learning
-
-#### Environmental Policy Analysis for Data Science

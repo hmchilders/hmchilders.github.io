@@ -1,6 +1,6 @@
 ---
 title: "21st Century Energy Evolution: Trends & Transformations" 
-description: "Data Viz Final Project"
+description: "Understanding how energy use has changed in the United States - Data Visualization Final Project"
 author: 
   - name: Heather Childers
     url: hmchilders.github.io/
